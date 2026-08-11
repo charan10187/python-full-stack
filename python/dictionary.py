@@ -1,0 +1,9 @@
+student={
+    "name":"charan",
+    "age":22,
+    "city":"hyd"
+}
+print(student.keys())
+print(student.items())
+print(student.values())
+print(student.name())
