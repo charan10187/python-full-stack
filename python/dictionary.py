@@ -12,3 +12,9 @@ else:
     print("not empty")
 print(student["name"])
 print(student.get("age"))
+
+student=["charan","lokesh","kaif","kushal","akram"]
+for _ in range(len(student)):
+    print(_,student[_])
+for _ in student:
+    print(_)
