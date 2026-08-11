@@ -6,4 +6,7 @@ student={
 print(student.keys())
 print(student.items())
 print(student.values())
-print(student.name())
+if len(student.items())==0:
+    print("empty")
+else:
+    print("not empty")
