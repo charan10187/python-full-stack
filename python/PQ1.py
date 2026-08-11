@@ -4,3 +4,6 @@ fruits.append("grapes")
 print(fruits)
 fruits.pop()
 print(fruits)
+a=[10,20,30,10,30,10]
+print(a.count(10))
+print(a.index(10))
