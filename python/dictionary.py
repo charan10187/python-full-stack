@@ -11,3 +11,4 @@ if len(student.items())==0:
 else:
     print("not empty")
 print(student["name"])
+print(student.get("age"))
