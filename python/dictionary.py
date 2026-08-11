@@ -10,3 +10,4 @@ if len(student.items())==0:
     print("empty")
 else:
     print("not empty")
+print(student["name"])
