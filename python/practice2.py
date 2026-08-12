@@ -1,6 +1,6 @@
-def python():
+def display():
     print("Welcome to Python")
-python()
+display()
 
 def greetig(name):
     print("welcome",name)
