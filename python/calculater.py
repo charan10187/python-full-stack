@@ -2,10 +2,10 @@ def calculater(oper,val):
     result=[]
     print(type(result))
     if oper=="+":
-        for i in range(0,len(val)):
-            print(val[i])
-            [val[i]]
-            print(type(val[i]))
+        for _ in range(0,len(val)):
+            print(val[_])
+            [val[_]]
+            print(type(val[_]))
             # result=result+val[i]
             # print(result)
     #     return result
@@ -22,9 +22,9 @@ def calculater(oper,val):
     #     return result
     # else:
     #      return "invalid"
-val=[int(input("enter values: "))]
-# print(val)
-print(val)
+s=input("enter values: ")
+val=[s]
+print(type(val))
 print("+","-","*","/")
 oper=input()
 # print(type(oper))
