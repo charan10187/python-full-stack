@@ -1,0 +1,5 @@
+{
+    "mobileQrPreview.port": 5500,
+    "mobileQrPreview.serverUrl": "http://127.0.0.1:5500/Day6/",
+    "liveServer.settings.multiRootWorkspaceName": "HTML"
+}
