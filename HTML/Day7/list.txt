@@ -1,0 +1,5 @@
+list
+
+it is a group or collection of related iteams arranged in a orginized manner
+ 1. ordered list  ==> <OL> <LI> </LI> </OL> ==> NUMBERS ALPHABETS ROMAN NUMBERS( BOTH UPPER CASE AND LOWER CASE )
+ 2
