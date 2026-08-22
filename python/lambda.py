@@ -28,3 +28,13 @@ result=list(map(lambda x:x*2,even_numbers))
 print(result)
 
 
+numbers=[10,5,20,3,8,15]
+result=list(filter(lambda num:num>5,numbers))
+print(result)
+square=list(map(lambda squ:squ*2,result))
+print(square)
+order=sorted(square,reverse=True)
+print(order)
+
+# single line
+print(sorted(map(lambda number: number * 2, filter(lambda number: number > 5, numbers)), reverse=True))
