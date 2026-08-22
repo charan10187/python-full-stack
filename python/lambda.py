@@ -38,3 +38,16 @@ print(order)
 
 # single line
 print(sorted(map(lambda number: number * 2, filter(lambda number: number > 5, numbers)), reverse=True))
+
+
+from functools import reduce
+
+li=[10,20,30,40,50,60]
+print(reduce(map(lambda x:x, li)))
+
+
+for i in range(len(li)):
+    print(i)
+for index, val in enumerate(li):
+    print(index,val)
+
