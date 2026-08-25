@@ -43,18 +43,42 @@
 
         <label for="state">state :</label>
         <select name="" id="">
-            <option value="" selected >choose option</option>
-            <option value="state">Andhra pradesh</option>
-            <option value="state">Telengana </option>
-            <option value="state">Tamil nadu</option>
-            <option value="state">Karnataka</option>
+            <option value="choose" selected >choose option</option>
+            <option value="AP">Andhra pradesh</option>
+            <option value="TG">Telengana </option>
+            <option value="TN">Tamil nadu</option>
+            <option value="KA">Karnataka</option>
+        </select><br>
 
+        <label for =""> Districts : </label>
+        <select name="" id="AP">
+            <option hidden> choose Districts</option>
+            <optgroup label="Andhra pradesh">
+                <option value="">kurnool</option>
+                <option value="">Nandyal</option>
+                <option value="">kadapa</option>
+            </optgroup>
         </select>
-
-
+        <BR><BR>
+        <label for="">select the state</label>
+        <input type="text" list="state"placeholder="state">
+        <datalist id="state">
+            <option value="Andhra pradesh"></option>
+            <option value="Assam"></option>
+            <option value="Arunachal pradesh"></option>
+        </datalist>
+        <br><br>
+        <label for="">Resume</label>
+        <input type="file">
+        <label for="">Image</label>
+        <input type="image" src="../work/source/21.jpg" width="15%">
         <br><br>
         <input type="submit" value="login">
         <input type="reset" value="Clear All">
+        <br><br>
+        
+
+
         </form>
     </fieldset>
     
