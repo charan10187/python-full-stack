@@ -1,1 +1,367 @@
-/*  */
+/*
+CSS THEORY NOTES
+===============
+
+1. WHAT IS CSS?
+---------------
+CSS means Cascading Style Sheets.
+It is a stylesheet language used to control the appearance and layout of
+HTML pages.
+
+HTML creates the structure:
+
+	<h1>Hello</h1>
+
+CSS styles that structure:
+
+	h1 {
+		color: blue;
+	}
+
+CSS is not usually called a programming language because it does not contain
+general programming features such as loops, database operations, or complex
+business logic. It describes how elements should look and behave visually.
+
+
+2. WHICH LANGUAGES USE CSS?
+---------------------------
+CSS is commonly used with:
+
+- HTML for web pages
+- JavaScript for interactive web applications
+- PHP, Python, Java, and Node.js web applications
+- React, Angular, and Vue applications
+- Django and Flask applications
+
+CSS can style HTML produced by almost any web technology.
+
+
+3. CSS FILE EXTENSION
+---------------------
+CSS files use the .css extension.
+
+Example:
+
+	style.css
+
+An external CSS file is connected to HTML with:
+
+	<link rel="stylesheet" href="style.css">
+
+
+4. CSS SYNTAX
+-------------
+The basic CSS syntax is:
+
+	selector {
+		property: value;
+	}
+
+Example:
+
+	p {
+		color: blue;
+		font-size: 18px;
+	}
+
+- Selector: chooses the HTML element to style
+- Property: describes what should change
+- Value: describes how it should change
+
+
+5. WAYS TO ADD CSS
+------------------
+
+- Inline CSS: written inside an HTML element's style attribute
+- Internal CSS: written inside a style element in an HTML page
+- External CSS: written in a separate .css file
+
+External CSS is usually preferred because it is reusable and keeps HTML
+cleaner.
+
+
+6. USES OF CSS
+--------------
+CSS is used for:
+
+- Text colors, sizes, alignment, and fonts
+- Background colors and images
+- Width, height, margin, and padding
+- Borders, rounded corners, and shadows
+- Navigation bars, forms, and buttons
+- Page layouts using Flexbox and Grid
+- Responsive designs for phones, tablets, and computers
+- Animations and transitions
+- Print layouts
+- Dark and light themes
+
+
+7. IMPORTANT CSS TOPICS
+-----------------------
+Learn these topics in this order:
+
+- Selectors
+- Colors, backgrounds, and fonts
+- Width and height
+- Margin and padding
+- The box model
+- Borders and shadows
+- The display property
+- Flexbox
+- CSS Grid
+- Positioning
+- Responsive design and media queries
+- Transitions and animations
+
+
+8. THE CSS BOX MODEL
+--------------------
+Every HTML element is treated as a box containing:
+
+	content -> padding -> border -> margin
+
+Example:
+
+	div {
+		margin: 20px;
+		padding: 15px;
+		border: 1px solid black;
+	}
+
+- Content: the actual text or child elements
+- Padding: space inside the element around the content
+- Border: the visible line around the element
+- Margin: space outside the element
+
+
+9. CASCADING AND SPECIFICITY
+----------------------------
+The word "cascading" means that several rules can apply to the same element.
+The browser decides which rule has priority using importance, specificity,
+and the order of the rules.
+
+Common selector priority, from lower to higher, is:
+
+	element selector -> class selector -> ID selector
+
+Example:
+
+	p {
+		color: red;
+	}
+
+	.text {
+		color: blue;
+	}
+
+If a paragraph has class="text", the class rule normally wins and the text
+becomes blue.
+
+
+10. RESPONSIVE DESIGN
+---------------------
+Responsive design makes a page work on different screen sizes.
+Media queries apply CSS only when a condition is true:
+
+	@media (max-width: 600px) {
+		body {
+			background-color: lightgray;
+		}
+	}
+
+
+11. ADVANTAGES OF CSS
+---------------------
+
+- Separates design from HTML structure
+- Allows one stylesheet to be reused on many pages
+- Reduces repeated code
+- Makes responsive layouts possible
+- Supports animations and modern layouts
+- Makes a website's design easier to update
+
+
+12. LIMITATIONS OF CSS
+----------------------
+CSS cannot normally:
+
+- Store application data
+- Connect directly to a database
+- Perform server-side operations
+- Handle complex business rules
+- Replace JavaScript for advanced interaction
+- Guarantee exactly the same result in every browser
+
+JavaScript is normally used when behavior, logic, or advanced interaction is
+required.
+
+
+13. CSS EXTENSIONS AND RELATED TOOLS
+------------------------------------
+CSS itself uses the .css extension. Related tools extend CSS with extra
+features and are then converted into normal CSS for the browser:
+
+- Sass/SCSS uses the .scss extension
+- Less uses the .less extension
+- Stylus uses the .styl extension
+
+These tools can provide variables, nesting, reusable functions, and other
+features.
+
+
+14. CSS, HTML, AND JAVASCRIPT
+----------------------------
+
+	HTML       = structure
+	CSS        = design and layout
+	JavaScript = behavior and interaction
+
+The main use of CSS is to present HTML content attractively and arrange it
+correctly on different screen sizes.
+
+
+15. THREE TYPES OF CSS
+----------------------
+There are three ways to add CSS to an HTML document:
+
+	1. Inline CSS
+	2. Internal CSS
+	3. External CSS
+
+
+15.1 INLINE CSS
+---------------
+Inline CSS is written directly inside an HTML element using the style
+attribute.
+
+Example:
+
+	<h1 style="color: red;">Welcome</h1>
+
+In this example, only this h1 element receives the red color.
+
+Advantages:
+
+- Quick and easy for testing one style
+- Applies directly to one particular element
+
+Limitations:
+
+- Cannot be reused easily
+- Repeats CSS code when many elements need the same style
+- Makes HTML difficult to read and maintain
+- Mixes content, structure, and design together
+
+Inline CSS should mainly be used for small tests or special one-time styles.
+
+
+15.2 INTERNAL CSS
+-----------------
+Internal CSS is written inside a style element in the head section of an
+HTML document.
+
+Example:
+
+	<head>
+		<style>
+			h1 {
+				color: blue;
+			}
+		</style>
+	</head>
+
+The rules inside the style element can style multiple elements on that one
+HTML page.
+
+Advantages:
+
+- Useful when only one page needs the styles
+- More organized than writing styles on every HTML element
+- Can style many elements using one rule
+
+Limitations:
+
+- The styles usually cannot be reused automatically on other pages
+- Makes the HTML file larger
+- Styles may need to be copied if several pages use the same design
+
+Internal CSS is useful for small single-page exercises and demonstrations.
+
+
+15.3 EXTERNAL CSS
+-----------------
+External CSS is written in a separate file with the .css extension and then
+connected to the HTML file using a link element.
+
+Example HTML:
+
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+Example style.css:
+
+	h1 {
+		color: green;
+	}
+
+Advantages:
+
+- The same stylesheet can be reused on many HTML pages
+- Keeps HTML cleaner and easier to understand
+- Makes the website easier to maintain
+- A design change can be made in one file
+- Browsers can cache the stylesheet and load it efficiently
+
+Limitations:
+
+- Requires an additional file
+- The path and filename must be correct
+- The page may not be styled if the stylesheet is missing or cannot load
+
+External CSS is the recommended method for most real websites and projects.
+
+
+15.4 COMPARISON OF THE THREE TYPES
+-----------------------------------
+
+	Type      Written in             Best use
+	Inline    HTML style attribute   One quick, special change
+	Internal  HTML style element     One page or small exercise
+	External  Separate .css file     Multiple pages and real projects
+
+
+15.5 PRIORITY OF CSS RULES
+--------------------------
+If different CSS rules style the same element, the browser must decide which
+rule to use. This decision is affected by specificity, importance, and the
+order in which rules are written.
+
+For a simple example, inline CSS generally has higher priority than internal
+or external CSS:
+
+	External or internal CSS rule:
+	h1 {
+		color: blue;
+	}
+
+	Inline HTML rule:
+	<h1 style="color: red;">Welcome</h1>
+
+The heading will normally be red because the inline rule has higher priority.
+However, selector specificity and the !important rule can change the result.
+Avoid using !important unless there is a clear reason.
+
+
+15.6 RECOMMENDATION FOR STUDENTS
+--------------------------------
+Use inline CSS while learning or testing a single property. Use internal CSS
+for a small one-page practice file. Learn and use external CSS for projects,
+because it teaches good organization and is used in professional websites.
+
+Remember:
+
+	Inline   = quick single-element styling
+	Internal = styling inside one HTML page
+	External = reusable styling in a separate CSS file
+*/
