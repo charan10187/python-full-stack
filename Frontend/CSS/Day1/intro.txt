@@ -70,18 +70,7 @@ Example:
 - Value: describes how it should change
 
 
-5. WAYS TO ADD CSS
-------------------
-
-- Inline CSS: written inside an HTML element's style attribute
-- Internal CSS: written inside a style element in an HTML page
-- External CSS: written in a separate .css file
-
-External CSS is usually preferred because it is reusable and keeps HTML
-cleaner.
-
-
-6. USES OF CSS
+5. USES OF CSS
 --------------
 CSS is used for:
 
@@ -97,11 +86,40 @@ CSS is used for:
 - Dark and light themes
 
 
+6. WAYS TO ADD CSS
+------------------
+
+- Inline CSS: written inside an HTML element's style attribute
+- Internal CSS: written inside a style element in an HTML page
+- External CSS: written in a separate .css file
+
+External CSS is usually preferred because it is reusable and keeps HTML
+cleaner.
+
 7. IMPORTANT CSS TOPICS
 -----------------------
 Learn these topics in this order:
 
 - Selectors
+it is used to target the particular HTML element
+1.simple selector/general selector
+	a.id selector (In HTML id= value) ( In css we give #value)
+				  id=head/any unique value  
+				  in css(
+					#head/any unique value{
+						color
+						css propertys
+					}
+				  )
+	b.class selector (.)
+	c.tagname selector 
+	d.group selector (it is a a combination all seperated by ,) 
+	e.universal selector ( * )
+
+2.Combinators selector
+3.Psu
+
+
 - Colors, backgrounds, and fonts
 - Width and height
 - Margin and padding

@@ -1,0 +1,13 @@
+
+/* it is universal without any target element or tag 
+    the style effects is applied to all the elements (entire page) */
+*{
+    color: goldenrod;
+    font-size: medium;
+    background-color: antiquewhite;
+}
+
+#head{
+    color: black;
+}
+
