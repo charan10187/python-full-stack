@@ -1,14 +1,26 @@
-# wellfound
-# instahyre
+'''
+Example 1:
+
+Input: num = 38
+Output: 2
+Explanation: The process is
+38 --> 3 + 8 --> 11
+11 --> 1 + 1 --> 2 
+Since 2 has only one digit, return it.
+'''
 
 
 
+# print(sum([ int(i) for i in st_num]))
 
-# li=[10,20,30,40,50,60]
-# for i in range(len(li)):
-#     print(i)
-# for index, val in enumerate(li):
-#     print(index,val)
+def repeat(num):
+    st_num=str(num)
 
+    if len(st_num)==1:
+        return st_num
+    else:
+        res=sum([ int(i) for i in st_num])
+        num=repeat(res)
+        return num
 
-n=int(input("power = "))
+print(repeat(111))
