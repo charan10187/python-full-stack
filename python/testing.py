@@ -23,4 +23,4 @@ def repeat(num):
         num=repeat(res)
         return num
 
-print(repeat(111))
+print(repeat(1111111))
