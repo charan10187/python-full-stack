@@ -20,3 +20,13 @@ class="we can use same name"    we use .name */
 /* if we target a element wwith both Id and class at a time
     then first priority will go to Id this means Id properties will apply first  */
 
+
+/*   tagname is use to target all the same tags 
+if in our html page there is a 5 paragraph( <P> ) then it is applied to all 5 paragraph
+it is tag level target 
+but if the paragraph has Id then the priority goes to Id selector*/
+p{ 
+    
+    color: aquamarine;
+
+}
