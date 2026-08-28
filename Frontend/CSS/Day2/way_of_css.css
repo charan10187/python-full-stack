@@ -27,6 +27,15 @@ it is tag level target
 but if the paragraph has Id then the priority goes to Id selector*/
 p{ 
     
-    color: aquamarine;
+    color: rgb(248, 116, 2);
 
 }
+
+/* GROUP selector makes the all elements with the tagname
+,id="idvalue and class="class name*/
+
+p,h1{
+    color: darkslategray;
+}
+
+/* NOTE: priority  id>  class>    tagname>    group>  universal */
