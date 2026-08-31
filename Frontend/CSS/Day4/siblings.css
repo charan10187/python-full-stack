@@ -1,0 +1,39 @@
+#grandfather{
+    background-color:aquamarine;
+    width: 100%;
+    height: 350px;
+}
+
+#father{
+    background-color: antiquewhite;
+    width: 49.5%;
+    height: 250px;
+    float: left;
+    border: 2px solid black;
+}
+
+
+#uncle{
+    background-color: antiquewhite;
+    width: 49.2%;
+    height: 250px;
+    float: right;
+    border: 2px solid black;    
+}
+
+#sib1,#you,#sib2,#cous1,#cous2,#cous3{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    float: left;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 10px;
+    text-align: center;
+    padding-top: 10%;
+}
+
+#cous2~#cous3{
+    background-color: white;
+}
+

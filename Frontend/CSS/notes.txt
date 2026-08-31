@@ -1,0 +1,94 @@
+27|08
+------
+CSS:- It is a style sheet language which is used to style/ design/ layout/ present the webpage by using fonts, colors, and etc.
+
+One css file to hundrad html pages
+
+* one css file u created reuse it multiple time
+* one css file ==> mutltiple html page
+
+
+Syntax:- selcetor {selector:values}
+
+in html
+
+<h1 style="color:red;"> india</h1> // this is also known inline CSS
+          |--value--|
+
+in CSS
+
+<h1 style="color:red;"> india</h1>
+                |value|
+
+
+
+if we do the the both external cc and internal ccs used in same html then the only css is used ehich is the nearest to the </hed> tag then that properties is applied
+
+To conntect html and css tag
+we need to link with the web pages :-      <link rel="stylesheet" href="">
+
+
+==> You can able to give the design in inle as wel as external csss ut for make the desugn is to change then when u want to give the sepific 
+    design in a tag and ont other use inlune and also if you want to give the design to the all thga tags you use external css.
+
+================================================================================================================================================
+padding is the space around the content
+marigin is the the space around the blocks
+
+
+================================================================================================================================================
+
+28|08
+-----
+1. Selector:- It is used to traget the particulae HTML Elements
+1.  Simple selector / General Selector 
+        |-> id Selector (#) = Selects an element using its id   [syntax= #<idvalue>{....}] [It don't start with numbers but is cointains number and also there is no space between then name in the class]
+        |-> class selcetor (.) = Selects elements using their class.
+        |-> Tagname Selector (tag) = Selects HTML elements by their tag name, Whenever you targeting the particulaer tag [syntax= <Tagname>{....}]
+        |-> Group Selectors (,) = Used when you want the same CSS for multiple elements.
+        |-> Universal Selector (*) = Selects all elements.
+
+
+==> {Compare to class, Id. have more priority then class }
+==> {Compare to class, Id, tagname. id have more priority then class and tagname, and class is more priority then tagname }
+==> {Compare to class, Id, tagname, group. id have more priority then class,tagname group, and class is more priority then tagname group, groupname is more priority then group tag }
+
+=====> priority  --   id   >>> classs   >>> group   >>> tagname.
+ 
+==================================================================================================================================================
+29|08
+------
+
+2. Combinators Selector :     It is used to give the relatiomship between simple selector
+    |1. Descendant selector (Space) :- It is used to target all the elements that are nested inside  a specific ancestor element. How is it apply
+                                        ==> It target from the root elements to all the elemsnts
+                                        ==> Here it mainly focus on the parent elements 
+                                        ==> Only parents elements can target to change the child elemants 
+    |2. Child selector (>):- Here only one genration is targeting
+                            ==> Here more then one generation we cannot target
+                            ==> Herethe child of parents is target but the root not able to target the Child
+                            ==> It target only  the below child class
+
+    |3. Adjancent Sibiling selcetor(+) :- It used to target the element below the next done elemants only next to that line not able to target next to tnext elements 
+                            ==> here the nexact that element is targeting
+                            ==> next to next target is not posssible
+                            ==>
+    |4. Genreal Sibiling selector (~): grneral sibling is used to targeet the sibling after the current sibling
+
+
+
+
+3. Pesudo class Selector
+it is a keyword added to css selector, prefixed by (:), it is used to define the state of an html element
+
+or
+
+it is used to target elements based on their state or position in the document tree 
+
+element:Pseudo-classname{
+    css style tags
+}
+            interactive/user action Pseudo class (link)
+
+4. PseudoElement Selector
+5. 
