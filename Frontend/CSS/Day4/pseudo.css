@@ -1,13 +1,13 @@
 a:active{
     color: red;
-    background-color: aliceblue;
+    background-color:antiquewhite;
 }
 
 
 
 a:hover{
     color: black;
-    background-color:aliceblue;
+    background-color:rgb(112, 175, 230);
 }
 
 
