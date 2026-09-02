@@ -11,6 +11,7 @@ it is used to remove the default margine:8px, padding: ,box-size:
 
 /* when we give a image and if the image is half of the background then the image is multiplies and fills the background */
 body{
+
     background-color: aquamarine;
     background-image: url('https://th.bing.com/th/id/OIP.v010MoySrq0UfwhGlSZRTQHaEK?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3');
     background-size: 300px;
@@ -18,15 +19,41 @@ body{
     background-repeat: no-repeat ;  /*  it makes the image to display only 
                                         once in the background */
 
-     background-repeat: repeat-x;   /*  it makes the image repeat only
+     /* background-repeat: repeat-x;    */
+                                    /*  it makes the image repeat only
                                         in a stright line -img-img-img    */
-    background-repeat: repeat-y;    /*  it makes the image repeat only
+
+    /* background-repeat: repeat-y; */    
+                                    /*  it makes the image repeat only 
                                         in a y-axis line |img
                                                          |img
                                                          |img
                                                          */
-   
-    /* background-size: 40%; */
-    /* background-size: 300px,300px; */
+    /* BACKGROUND-POSITIONS :
+            ____________
+            |TL| TC |TR|
+            |L | Ct |R |
+            |BL| BC |BR|
+    */
+
+    background-position: top left;      /*  TL  */
+    background-position: top right;     /*  TR  */
+    background-position: left;          /*  L   */
+    background-position: center;        /*  Ct  */
+    background-position: right;         /*  R   */
+    background-position: top center;    /*  TC  */
+    background-position: bottom left;   /*  BL  */
+    background-position: bottom center; /*  BC  */
+    background-position: bottom right;  /*  BR  */
+    /* using the pixcel  positions we are moving image*/
+    background-position: 300px;
+    background-position: 100px,100px;
+    background-position: 50%,50%;
+    background-position: -100px,-100px;
+
+    background-position-x: 100px,100px;   /*    used to move along with the 
+                                                x-axis  */
+    background-position-y: 100px,100px;   /*    used to move along with the
+                                                y-axis  */ 
 }
 
