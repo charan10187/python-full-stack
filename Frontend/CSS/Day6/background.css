@@ -9,8 +9,24 @@ it is used to remove the default margine:8px, padding: ,box-size:
 }
 
 
-
+/* when we give a image and if the image is half of the background then the image is multiplies and fills the background */
 body{
     background-color: aquamarine;
+    background-image: url('https://th.bing.com/th/id/OIP.v010MoySrq0UfwhGlSZRTQHaEK?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3');
+    background-size: 300px;
+    /* background-repeat: repeat ; */
+    background-repeat: no-repeat ;  /*  it makes the image to display only 
+                                        once in the background */
+
+     background-repeat: repeat-x;   /*  it makes the image repeat only
+                                        in a stright line -img-img-img    */
+    background-repeat: repeat-y;    /*  it makes the image repeat only
+                                        in a y-axis line |img
+                                                         |img
+                                                         |img
+                                                         */
+   
+    /* background-size: 40%; */
+    /* background-size: 300px,300px; */
 }
 
