@@ -1,0 +1,39 @@
+/* here we targeted the all h1 tags using
+    the parent as base element */
+#container>h1{
+
+    color: aquamarine;
+}
+
+/* this first-of type is used to target a specific child 
+    even though child tag is same based on the position
+    we can target the desired tag  */
+
+
+/* it selects the first child in the parent  */
+#container>h1:first-of-type{
+
+    color: gold;
+}
+
+/* it selects the nth position child in the parent  */
+#container>h1:nth-of-type(2){
+
+    color: red;
+}
+
+/*  it targets the last child of the parent */
+#container>h1:last-of-type{
+
+    color: blue;
+}
+
+/*  in this way we can specifically target a single 
+    element/tag present in the HTML
+    
+    if it is in a nested structure    */
+#container>h3>p:first-of-type{
+    color: cadetblue;
+    background-color:lightgoldenrodyellow;
+}
+
