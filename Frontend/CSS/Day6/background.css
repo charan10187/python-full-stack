@@ -1,0 +1,16 @@
+/* to remove the border and make the entire 
+page is fit the screen we use this 
+it is used to remove the default margine:8px, padding: ,box-size: 
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+
+
+body{
+    background-color: aquamarine;
+}
+
