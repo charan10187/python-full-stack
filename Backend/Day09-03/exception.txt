@@ -1,0 +1,73 @@
+Exception Handling: 
+
+Exception handling is a way to handle runtime errors without stopping the
+entire program unexpectedly
+
+Common exceptions:
+- ValueError        : an invalid value, such as int("abc")
+- TypeError         : an operation uses an incompatible type
+- IndexError        : an index is outside a list's range
+- ZeroDivisionError : a number is divided by zero
+- KeyError          : a dictionary key does not exist
+
+try, except, and finally:
+
+try:
+	result = 10 / 0
+except ZeroDivisionError:
+	print("A number cannot be divided by zero.")
+finally:
+	print("This block always executes.")
+
+In this example:
+- try contains code that may raise an exception.
+- except handles the exception when it occurs.
+- finally runs whether an exception occurs or not.
+
+When to use each block:
+- Use try for code that may cause a runtime error.
+- Use except to handle the error and keep the program running.
+- Use finally for code that must run at the end, even when an error occurs.
+
+Where exception handling is useful:
+- Taking input from users
+- Reading or writing files
+- Connecting to a database
+- Calling an API or network service
+- Converting data types
+- Performing calculations that may fail
+
+For example, try attempts to convert user input, except displays a helpful
+message when the input is invalid, and finally confirms that the process is
+complete.
+
+Example with user input:
+
+try:
+	number = int(input("Enter a number: "))
+	result = 10 / number
+except ValueError:
+	print("Please enter a valid whole number.")
+except ZeroDivisionError:
+	print("A number cannot be divided by zero.")
+else:
+	print("Result:", result)
+finally:
+	print("This block always executes.")
+
+How it works:
+- except handles a specific exception.
+- else runs only when no exception occurs.
+- finally runs whether an exception occurs or not.
+
+You can raise an exception yourself:
+
+age = -1
+if age < 0:
+	raise ValueError("Age cannot be negative")
+
+Good practice:
+- Catch specific exceptions instead of using a bare except.
+- Keep the try block small.
+- Use finally for cleanup, such as closing a file.
+
