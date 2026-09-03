@@ -1,7 +1,7 @@
 Exception Handling: 
 
 Exception handling is a way to handle runtime errors without stopping the
-entire program unexpectedly
+entire program unexpectedly.
 
 Common exceptions:
 - ValueError        : an invalid value, such as int("abc")
@@ -9,6 +9,53 @@ Common exceptions:
 - IndexError        : an index is outside a list's range
 - ZeroDivisionError : a number is divided by zero
 - KeyError          : a dictionary key does not exist
+- NameError         : a variable or function name is not defined
+- FileNotFoundError  : a requested file does not exist
+- AttributeError    : an object does not have the requested attribute
+- ImportError       : an imported module or name cannot be imported
+- ModuleNotFoundError: the requested module cannot be found
+- PermissionError   : the program does not have permission for an operation
+- OSError            : an operating-system operation fails
+- AssertionError    : an assert statement's condition is false
+
+The following examples intentionally cause errors. Run them one at a time;
+do not run all of them as one program.
+
+# AttributeError: strings do not have an append method.
+text = "hello"
+text.append("!")
+
+# ModuleNotFoundError: the module is not installed or cannot be found.
+import unknown_module
+
+# PermissionError: access to a file or folder may be denied.
+# The actual result depends on the computer's file permissions.
+file = open("protected.txt", "w")
+
+# AssertionError: the condition is false.
+assert 2 + 2 == 5
+
+More exception examples:
+
+# ValueError: the text cannot be converted to an integer.
+number = int("abc")
+
+# TypeError: a string and an integer cannot be added together.
+result = "Age: " + 20
+
+# IndexError: list index 3 is outside this list's range.
+items = ["pen", "book"]
+print(items[3])
+
+# KeyError: the key "email" is not in the dictionary.
+student = {"name": "Asha"}
+print(student["email"])
+
+# NameError: the variable has not been defined.
+print(username)
+
+# FileNotFoundError: the file path does not point to an existing file.
+file = open("missing.txt")
 
 try, except, and finally:
 
