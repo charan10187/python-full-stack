@@ -29,4 +29,13 @@ body{
 
     /* ANGLES: top=0deg, right=90deg, bottom=180deg, left=270deg, 
                 combination of angles:top right=45deg */
+
+    background-color: linear-gradient(45deg,red,yellow,green);
+    background-color: linear-gradient(90deg,red,yellow,green);
+    background-color: linear-gradient(135deg,red,yellow,green);
+    background-color: linear-gradient(180deg,red,yellow,green);
+    background-color: linear-gradient(1deg,red,yellow,green);
+    background-color: linear-gradient(270deg,red,yellow,green);
+    background-color: linear-gradient(315deg,red,yellow,green);
+    background-color: linear-gradient(360deg,red,yellow,green);
 }
