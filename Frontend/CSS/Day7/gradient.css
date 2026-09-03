@@ -1,0 +1,32 @@
+/* CSS gradients : it is a function that creates a smooth transation between two or more colors
+
+there are three types of gradients: linear radial conic
+
+linearGradient : the color transition occurs in a stright line by default from top to bottom */
+
+body{
+    height: 200vh;
+
+    /* background:linear-gradient(red yellow green); */
+
+    /* syntax: background:
+        linear-gradient(direction,color-stop1,color-stop2,....) */
+    
+        /* direction: to top,to bottom, to left, to right, to top left, to top right, to bottom left, to bottom right  */
+
+    background:linear-gradient(direction,color,color,color);
+    background:linear-gradient(to top, red , yellow ,blue);
+                                /* the top color is blue --> yellow --> red */
+                                /* the last color will come first*/
+    background:linear-gradient(to top, red , yellow ,blue);
+    background:linear-gradient(to bottom, red , yellow ,blue);
+    background:linear-gradient(to left, red , yellow ,blue);
+    background:linear-gradient(to right, red , yellow ,blue);
+    background:linear-gradient(to top left, red , yellow ,blue);
+    background:linear-gradient(to top right, red , yellow ,blue);
+    background:linear-gradient(to bottom left, red , yellow ,blue);
+    background:linear-gradient(to bottom right, red , yellow ,blue);
+
+    /* ANGLES: top=0deg, right=90deg, bottom=180deg, left=270deg, 
+                combination of angles:top right=45deg */
+}

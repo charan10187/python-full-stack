@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+
+/* when we give a image and if the image is half of the background then the image is multiplies and fills the background */
+body{
+        
+    background-color: aquamarine;
+    background-image: url('https://th.bing.com/th/id/OIP.v010MoySrq0UfwhGlSZRTQHaEK?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3');
+    background-repeat: no-repeat;
+    background-size: 150px;  
+                            /* used to resixe the background-img  */
+    
+    height: 200vh; /*height of webpage 
+    
+    /* background-position: 0px 0px; */
+    background-position: center ; 
+                                       /* image/content will be in center */
+    /* background-attachment: fixed;    */
+                                       /* fixed makes the image/text position 
+                                          even if u scroll the page the will stay intact you can see this in logosat top corners  */
+    /* background-attachment: scroll; */
+    /* background-attachment: local; */
+    /* background-attachment: auto; */
+  
+}
