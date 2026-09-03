@@ -1,94 +1,34 @@
-Exception Handling: 
+Exception Handling
+==================
 
 Exception handling is a way to handle runtime errors without stopping the
 entire program unexpectedly.
 
-Common exceptions:
-- ValueError        : an invalid value, such as int("abc")
-- TypeError         : an operation uses an incompatible type
-- IndexError        : an index is outside a list's range
-- ZeroDivisionError : a number is divided by zero
-- KeyError          : a dictionary key does not exist
-- NameError         : a variable or function name is not defined
-- FileNotFoundError  : a requested file does not exist
-- AttributeError    : an object does not have the requested attribute
-- ImportError       : an imported module or name cannot be imported
-- ModuleNotFoundError: the requested module cannot be found
-- PermissionError   : the program does not have permission for an operation
-- OSError            : an operating-system operation fails
-- AssertionError    : an assert statement's condition is false
+1. What is an exception?
+-------------------------
+An exception is an error that occurs while a program is running. For example,
+dividing a number by zero causes a ZeroDivisionError.
 
-The following examples intentionally cause errors. Run them one at a time;
-do not run all of them as one program.
-
-# AttributeError: strings do not have an append method.
-text = "hello"
-text.append("!")
-
-# ModuleNotFoundError: the module is not installed or cannot be found.
-import unknown_module
-
-# PermissionError: access to a file or folder may be denied.
-# The actual result depends on the computer's file permissions.
-file = open("protected.txt", "w")
-
-# AssertionError: the condition is false.
-assert 2 + 2 == 5
-
-More exception examples:
-
-# ValueError: the text cannot be converted to an integer.
-number = int("abc")
-
-# TypeError: a string and an integer cannot be added together.
-result = "Age: " + 20
-
-# IndexError: list index 3 is outside this list's range.
-items = ["pen", "book"]
-print(items[3])
-
-# KeyError: the key "email" is not in the dictionary.
-student = {"name": "Asha"}
-print(student["email"])
-
-# NameError: the variable has not been defined.
-print(username)
-
-# FileNotFoundError: the file path does not point to an existing file.
-file = open("missing.txt")
-
-try, except, and finally:
+2. try, except, else, and finally
+---------------------------------
 
 try:
 	result = 10 / 0
 except ZeroDivisionError:
 	print("A number cannot be divided by zero.")
+else:
+	print("Result:", result)
 finally:
 	print("This block always executes.")
 
-In this example:
+How each block works:
 - try contains code that may raise an exception.
-- except handles the exception when it occurs.
+- except handles a specific exception.
+- else runs only when no exception occurs.
 - finally runs whether an exception occurs or not.
 
-When to use each block:
-- Use try for code that may cause a runtime error.
-- Use except to handle the error and keep the program running.
-- Use finally for code that must run at the end, even when an error occurs.
-
-Where exception handling is useful:
-- Taking input from users
-- Reading or writing files
-- Connecting to a database
-- Calling an API or network service
-- Converting data types
-- Performing calculations that may fail
-
-For example, try attempts to convert user input, except displays a helpful
-message when the input is invalid, and finally confirms that the process is
-complete.
-
-Example with user input:
+3. Example with user input
+---------------------------
 
 try:
 	number = int(input("Enter a number: "))
@@ -100,21 +40,105 @@ except ZeroDivisionError:
 else:
 	print("Result:", result)
 finally:
-	print("This block always executes.")
+	print("Input process completed.")
 
-How it works:
-- except handles a specific exception.
-- else runs only when no exception occurs.
-- finally runs whether an exception occurs or not.
+In this example, try converts the input and performs the calculation. The
+matching except block displays a helpful message when something goes wrong.
 
-You can raise an exception yourself:
+4. When and where to use exception handling
+--------------------------------------------
+Use exception handling when code may fail, such as when:
+- Taking input from users
+- Converting data types
+- Reading or writing files
+- Connecting to a database
+- Calling an API or network service
+- Performing calculations that may fail
 
-age = -1
-if age < 0:
-	raise ValueError("Age cannot be negative")
+5. Common built-in exceptions
+------------------------------
+- ValueError         : an invalid value, such as int("abc")
+- TypeError          : an operation uses incompatible types
+- IndexError         : a list index is outside the list's range
+- ZeroDivisionError  : a number is divided by zero
+- KeyError           : a dictionary key does not exist
+- NameError          : a variable or function name is not defined
+- FileNotFoundError  : a requested file does not exist
+- AttributeError     : an object does not have the requested attribute
+- ImportError        : an imported module or name cannot be imported
+- ModuleNotFoundError: the requested module cannot be found
+- PermissionError    : permission for an operation is denied
+- OSError            : an operating-system operation fails
+- AssertionError     : an assert condition is false
 
-Good practice:
+6. Raising an error yourself
+-----------------------------
+Use raise when a value is not valid. You can raise a built-in exception with
+your own message:
+
+try:
+	age = -1
+	if age < 0:
+		raise ValueError("Age cannot be negative")
+except ValueError as error:
+	print("Error:", error)
+
+7. Creating a custom exception
+------------------------------
+Create a custom exception by inheriting from Exception:
+
+class InvalidAgeError(Exception):
+	pass
+
+try:
+	age = -1
+	if age < 0:
+		raise InvalidAgeError("Age cannot be negative")
+except InvalidAgeError as error:
+	print("Error:", error)
+
+Use a custom exception when an application needs a clear, meaningful error
+name, such as InvalidAgeError or InsufficientBalanceError.
+
+8. Practice examples
+--------------------
+The following examples intentionally cause errors. Run them one at a time,
+preferably inside a try and except block.
+
+# ValueError: the text cannot be converted to an integer.
+number = int("abc")
+
+# TypeError: a string and an integer cannot be added together.
+result = "Age: " + 20
+
+# IndexError: index 3 is outside this list's range.
+items = ["pen", "book"]
+print(items[3])
+
+# KeyError: the key "email" is not in the dictionary.
+student = {"name": "Asha"}
+print(student["email"])
+
+# NameError: the variable has not been defined.
+print(username)
+
+# FileNotFoundError: the file does not exist.
+file = open("missing.txt")
+
+# AttributeError: strings do not have an append method.
+text = "hello"
+text.append("!")
+
+# ModuleNotFoundError: the module cannot be found.
+import unknown_module
+
+# AssertionError: the condition is false.
+assert 2 + 2 == 5
+
+9. Good practices
+-----------------
 - Catch specific exceptions instead of using a bare except.
 - Keep the try block small.
-- Use finally for cleanup, such as closing a file.
+- Use finally for cleanup, such as closing a resource.
+- Use with open(...) for files when possible; it closes the file automatically.
 
