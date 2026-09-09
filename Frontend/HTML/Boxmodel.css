@@ -3,7 +3,7 @@
     height: 200px;
     border:2px solid black;
     margin: auto;
-    display: flex; 
+    /* display: flex;  */
 }
 #border{
     background-color: burlywood;
@@ -11,7 +11,7 @@
     width: 90%;
     border:2px solid black;
     margin:auto; 
-    display: flex; 
+    /* display: flex;  */
 }
 #padding{
     background-color: aliceblue;
@@ -19,7 +19,7 @@
     width: 80%;
     border:2px solid black;
     margin: auto;
-    display: flex; 
+    /* display: flex;  */
 }
 #content{
     background-color: chartreuse;
@@ -30,6 +30,6 @@
 }
 
 .text{
-    margin-top: 0%;
-    text-align:center;
+    margin:0;
+    padding-bottom: 1%;
 }
