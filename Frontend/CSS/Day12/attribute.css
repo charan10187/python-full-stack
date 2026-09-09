@@ -4,10 +4,77 @@ element ==> specific Attribute, attribute balue or both
 
 1. [attribute] - select with the specific attribute         */
 
+/* 
+    here there is a priority href > target >target=" _blank/_self/....
+*/
+
 a[href]{
     background-color: cadetblue;
 }
-
 a[target]{
+    background-color:blueviolet;
+}
+
+a[target="_blank"]{
     background-color: coral;
+}
+a[target="_blank"]{
+    background-color: coral;
+}
+a[target="_blank"]{
+    background-color: coral;
+}
+
+
+img{ 
+    width: 100px;
+
+}
+
+img[alt~="flower"]{
+    border: 5px solid red;
+} 
+
+
+/* 
+    3. [attribute|="value"]- select element with the specific attribute and containing a specific word followed by hypen (-) 
+*/
+
+
+h1[class]{
+    background-color: black;
+}
+h1[class|="top-content"]{
+    background-color: aqua;
+}
+h2[class|="middle-content"]{
+    background-color: yellowgreen;
+}
+h3[class|="bottom-content"]{
+    background-color: pink;
+}
+
+/* 
+    attribute selectors
+    5. [attribute^="values"] - select element with the specific attribute whose value starts with specific value
+*/
+
+h1[class^="content"]{
+    color: burlywood;
+}
+
+/* 
+    attribute selectors
+    5. [attribute$="values"] - select element with the specific attribute whose value ends with specific value
+*/
+h2[class$="content"]{
+    background-color: aqua
+}
+
+/* 
+    attribute selectors
+    5. [attribute*="values"] - select element with the specific attribute whose value contains with specific value
+*/
+h1[class*='op']{
+    color: red;
 }

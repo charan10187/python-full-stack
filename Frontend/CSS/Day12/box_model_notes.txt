@@ -1,0 +1,61 @@
+CSS Box Model Explained
+
+In CSS, every HTML element is treated like a rectangular box.
+The CSS box model describes how that box is sized and spaced.
+
+Parts of the box model:
+1. Content
+   - The actual text, image, or other content inside the element.
+
+2. Padding
+   - Space between the content and the border.
+
+3. Border
+   - The visible line around the element.
+
+4. Margin
+   - Space outside the border, separating the element from other elements.
+
+Example:
+```
+div {
+  width: 300px;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 30px;
+}
+```
+
+Here:
+- width = 300px for the content area
+- padding = 20px on all sides
+- border = 5px solid black
+- margin = 30px outside the box
+
+Total width by default:
+width + padding + border + margin
+
+So the total width becomes:
+300 + 20 + 20 + 5 + 5 + 30 + 30 = 410px
+
+Important:
+By default, CSS uses content-box.
+That means the width applies only to the content area, and padding and border add extra space.
+
+To make width include padding and border, use:
+```
+div {
+  width: 300px;
+  padding: 20px;
+  border: 5px solid black;
+  box-sizing: border-box;
+}
+```
+
+Now the total width stays 300px.
+
+Simple memory trick:
+margin -> border -> padding -> content
+
+Short summary:
+The CSS box model is the way CSS calculates the total size and spacing of an element.
