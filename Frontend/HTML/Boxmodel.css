@@ -1,0 +1,35 @@
+#margin{
+    background-color: aqua;
+    height: 200px;
+    border:2px solid black;
+    margin: auto;
+    display: flex; 
+}
+#border{
+    background-color: burlywood;
+    height: 150px;
+    width: 90%;
+    border:2px solid black;
+    margin:auto; 
+    display: flex; 
+}
+#padding{
+    background-color: aliceblue;
+    height: 100px;
+    width: 80%;
+    border:2px solid black;
+    margin: auto;
+    display: flex; 
+}
+#content{
+    background-color: chartreuse;
+    height: 50px;
+    width: 70%;
+    border:2px solid black;
+    margin: auto; 
+}
+
+.text{
+    margin-top: 0%;
+    text-align:center;
+}
