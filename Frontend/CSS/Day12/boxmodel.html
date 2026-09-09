@@ -3,11 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box model</title>
+    <title>CSS Box Model Demo</title>
     <link rel="stylesheet" href="./boxmodel.css">
 </head>
 <body>
-    <h1>sri charan</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <div class="demo">
+        <h1>CSS Box Model Demo</h1>
+        <p>
+            This page shows how the CSS box model works. Each HTML element is treated as a box
+            with content, padding, border, and margin.
+        </p>
+
+        <div class="box-default">
+            <h2>Default Box Model</h2>
+            <p>
+                This box uses the default <strong>content-box</strong> behavior, so the width applies
+                only to the content area.
+            </p>
+        </div>
+
+        <div class="box-border-box">
+            <h2>Border-box Example</h2>
+            <p>
+                This box uses <strong>box-sizing: border-box</strong>, so the width includes padding
+                and border.
+            </p>
+        </div>
+    </div>
 </body>
 </html>
