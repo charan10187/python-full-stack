@@ -1,0 +1,13 @@
+/* Attribute selector: select and style ==> HTML
+
+element ==> specific Attribute, attribute balue or both
+
+1. [attribute] - select with the specific attribute         */
+
+a[href]{
+    background-color: cadetblue;
+}
+
+a[target]{
+    background-color: coral;
+}
