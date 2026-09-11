@@ -1,0 +1,12 @@
+body {
+  background-color: #777; /* light gray */
+}
+/* h1 {
+  color: rgb(255, 0, 0); red
+} */
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}

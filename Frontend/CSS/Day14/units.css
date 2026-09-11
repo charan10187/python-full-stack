@@ -1,0 +1,41 @@
+#cm{
+    font-size: 2cm;
+    color: blueviolet;
+}
+
+#mm{
+    font-size: 20mm;
+}
+
+#in{
+    font-size: 1in;
+}
+
+#px{
+    font-size: 50px;
+}
+
+#pc{
+    font-size: 2pc;
+}
+
+#pt{
+    font-size: 20pt;
+}
+
+
+/* relative unit: vw,vh, %, em, rem */
+
+#vw{
+    /* 100vw(height)=200% */
+    height: 50vw;
+    width:50vh
+}
+/* 
+    50vh(width)=50% of screen width
+    100vh(height)=200% of screen height
+*/
+#vh{
+
+}
+
