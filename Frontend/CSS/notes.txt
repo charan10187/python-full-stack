@@ -1,3 +1,6 @@
+
+it is lorem not loream
+
 27|08
 ------
 CSS:- It is a style sheet language which is used to style/ design/ layout/ present the webpage by using fonts, colors, and etc.
@@ -17,12 +20,13 @@ in html
 
 in CSS
 
-<h1 style="color:red;"> india</h1>
-                |value|
+h1{
+    color:red;
+}
+   this is external css because we are accessing the elements from another file (CSS)
 
 
-
-if we do the the both external cc and internal ccs used in same html then the only css is used ehich is the nearest to the </hed> tag then that properties is applied
+if we do the the both external css and internal ccs used in same html file  then the only css is used which is the nearest to the </hed> tag then that properties is applied
 
 To conntect html and css tag
 we need to link with the web pages :-      <link rel="stylesheet" href="">
@@ -42,10 +46,18 @@ marigin is the the space around the blocks
 -----
 1. Selector:- It is used to traget the particulae HTML Elements
 1.  Simple selector / General Selector 
-        |-> id Selector (#) = Selects an element using its id   [syntax= #<idvalue>{....}] [It don't start with numbers but is cointains number and also there is no space between then name in the class]
+        
+        |-> id Selector (#) = Selects an element using its id   
+        [syntax= #<idvalue>{....}] 
+        
+        [It don't start with numbers but is cointains number and also there is no space between then name in the class]
+        
         |-> class selcetor (.) = Selects elements using their class.
+        
         |-> Tagname Selector (tag) = Selects HTML elements by their tag name, Whenever you targeting the particulaer tag [syntax= <Tagname>{....}]
+        
         |-> Group Selectors (,) = Used when you want the same CSS for multiple elements.
+        
         |-> Universal Selector (*) = Selects all elements.
 
 
@@ -70,25 +82,186 @@ marigin is the the space around the blocks
                             ==> It target only  the below child class
 
     |3. Adjancent Sibiling selcetor(+) :- It used to target the element below the next done elemants only next to that line not able to target next to tnext elements 
-                            ==> here the nexact that element is targeting
+                            ==> here the nexact that elemendt is targeting
                             ==> next to next target is not posssible
                             ==>
-    |4. Genreal Sibiling selector (~): grneral sibling is used to targeet the sibling after the current sibling
+    |4. Genreal Sibiling selector (~) :- It us used to target the elements after the the first line to othe but we cn't able to target the reverse order 
 
 
+==================================================================================================================================================
+31|08
 
 
-3. Pesudo class Selector
-it is a keyword added to css selector, prefixed by (:), it is used to define the state of an html element
+==================================================================================================================================================
+01|09
 
-or
 
-it is used to target elements based on their state or position in the document tree 
+3. Pesudo class Selector:- It is used to target the elements based on their state or postion in the document there
+                           Syntax:- element:pseudo-classname{styles}
 
-element:Pseudo-classname{
-    css style tags
-}
-            interactive/user action Pseudo class (link)
+                           active :- It targets the element when they are being activated by the user.
+                           hover:- whenever you place the cursor in the elements you have to seen some changes it is called as hover
+                           active:- when we click on the link tag or the what changes it shows it is changes
+                           #Hover should be aways before the active state if you want to create#
 
-4. PseudoElement Selector
+4. PseudoElement Selector:- syntax  #       parent     p:    first-   child
+                                    |         |        |       |       |
+                                  class     class      tag   which    
+                                  target    name      name  element
+
+                                  
 5. 
+
+===================================================================================================================================================
+02|09
+
+CSS Backgrounfd properties:- It is used to add background effect like color, image, gradient from html element.
+1. Background - color
+2. Background - image(url and gradient) 
+3. Background - Repeat
+4. Background - Size
+5. Background - Attachment
+6. Background - Position
+7. Background (all properties work except size)
+background-repeat: repeat-x;   it repeat the x line me horizontal line 
+background-repeat: repeat-y;   it repeat the y line me vertical linee 
+
+
+==================================================================================================================================================
+
+03|09
+------
+=>Background is a elelmets which take all the properties in the  elments except the size properties.
+
+background-attachment: scroll; :- here the image is exact the centre of whole so when we scrol then the imge also scroll due to the center of the page size is more and the centre of the page is also in the below so the iamge is scrool
+background-attachment: fixed;  :- it is used to scrool the background but not the image it used to image constant but background scroll.
+background-attachment: local;  :- controls how a background image moves when you scroll an element.
+background-attachment: auto;
+
+
+CSS Gradients:- It is a fuction that are  craetws a smooth transction between two or more classname
+
+There are 3 types of gradient:-
+      
+     Linear                                               Radial                                                          
+     Conic
+
+
+1. Linear Gradient: Colors change in a straight line.
+                    Syntax:-background: linear-gradient(red, yellow);
+  Direction:- All are the started from the to(--)  whart thing is written in (--) that side it start all the the direction the color start from the right side 
+              i.e. color3 is the first then color 2 is the second then color 1 is the last one .
+        background: linear-gradient(to right, color1, color2, color3); :-
+        background: linear-gradient(to left, color1, color2, color3);  :-
+        background: linear-gradient(to buttom, color1, color2, color3);:-
+        background: linear-gradient(to top, color1, color2, color3);   :-
+
+
+
+
+
+
+===================================================================================================================================================
+04|09
+------
+
+2.  Radial Gradient :-  Colors spread from the center outward, like a circle. By defaut it shws in a circular pattern
+                        Radial-gradient() spreads from the center. 
+                        syntax: background: radial-gradient(color1,color2);
+                    
+                    By using keyword we can change the design like by using the circle keyword
+                    Syntax:- background: radial-gradient("circle", color 1, color2,.... colorn);
+                                                            |
+                                                          keyword
+                    => we can give n number of times to design 
+
+
+    ------>    radial-gradient(closest-side,color1, color2,color3,colo);
+
+    => It shows the nearest side to make the design
+    ------>      background-image: repeating-radial-gradient(balck, white,yellow);
+
+
+===================================================================================================================================================
+05|09
+------
+
+==>Color:- It is a pre defined colors names that can be use in css, all browsers support 140 color names each color have 155 shades.
+        It mainly focus onn the rgb type color
+        rgb- Red,green,blue
+        rgb(0,0,0): it's black
+        rgb(255,0,0):-it's  Red
+        rgb(0,255,0):- it̥'s green
+        rgb(0,0,255):- it's̥  blue
+        rgb(255,255,255):- it's white
+
+        It the section part it cointain 155 shades
+
+
+       RGBA:-
+
+            RGBA = Red + Green + Blue + Alpha
+            The extra A = Alpha, which controls transparency
+
+        ------> we use dcss color,text,bg properties then in the border part
+
+
+===================================================================================================================================================
+07|09
+
+CSS Border:- It defines the outline around the html elements,  so that providing visual separation of emphasiswithin a webpage layout.
+    Syntax:- 
+
+It has 3 values
+1. Thikness(px,%)
+2. Style(solid,double,dotted,dashboard,inst,outset,redge,grove,none)
+3. Color(colornames,rgb,rgba,hex,hexa,hsl,hsla.....)
+
+CSS border propeties like
+1. border-width
+2. border-style
+3. border-color
+4. border
+
+
+some main design and frame type keywords ro do with the designing of the images are the
+1. border-style:inset;      :- Makes the border look pressed inside the element.
+2. border-style:outset;     :- Makes the border look raised outside the element.
+3. border-style:ridge;      :- Makes the border look like a raised 3D ridge.
+4. border-style:groove;     :- Makes the border look like a sunken 3D groove.      
+
+
+
+ BORDER 
+---------
+
+here we can do some nay design like 
+border: 15px double  red;
+border: 15px dotted  red;
+like this etc ar ethere
+
+#For every side for you can able to give the design
+
+
+===================================================================================================================================================
+08|09
+Pseudo Element Selector:- It used to style particular HTML element.
+    Sysntax:- elementname : : pseudoelement{
+
+                                            css Style 
+                                            }
+    Windows semicoln the emoji bar comeout.
+
+    In unorder list the marker which are there we can able to give the image apart from the dots byt using the link of the image in the content but the image must be less then 5kb then it only shows the image if more then 5kb then it is not possibe to show the image 
+
+
+List item are styile by usinf marker and pseudoElement is used most imp
+
+
+===================================================================================================================================================
+09|09
+
+Attribut Selector:- It used to select and style the HTML elemantswith a specfic attribute, attributr value,name.
+
+Attribute selector represent witht he {[]-square bracket}.
+Syntax:-tagname[attribute name]{css Style} 

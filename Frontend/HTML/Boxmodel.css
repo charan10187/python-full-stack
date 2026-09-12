@@ -1,35 +1,49 @@
 #margin{
-    background-color: aqua;
-    height: 200px;
-    border:2px solid black;
+    background-color:antiquewhite;
+    height: 40vh;
+    width: 80vh;
+    /* border:1px solid black; */
     margin: auto;
+    border: dashed 2px;
+    /* text-align: center; */
     /* display: flex;  */
 }
 #border{
     background-color: burlywood;
-    height: 150px;
+    height: 30vh;
     width: 90%;
-    border:2px solid black;
+    border: 1px solid black;
     margin:auto; 
+    padding-top: 5%;
     /* display: flex;  */
 }
 #padding{
-    background-color: aliceblue;
-    height: 100px;
+    background-color: lightgreen;
+    height: 20vh;
     width: 80%;
     border:2px solid black;
     margin: auto;
+    border: dashed gray;
     /* display: flex;  */
 }
 #content{
-    background-color: chartreuse;
-    height: 50px;
+    background-color:lightskyblue;
+    height: 10vh;
     width: 70%;
-    border:2px solid black;
-    margin: auto; 
+    border:1px solid black;
+    margin: auto;
+    padding-top: 5%; 
 }
 
 .text{
     margin:0;
-    padding-bottom: 1%;
+    padding-left: 5%;
+    /* text-align: right; */
 }
+.text1{
+    margin:0;
+    padding-top: 5%;
+    text-align: center;
+}
+
+
