@@ -1,0 +1,5 @@
+INFO:root:logging code is running fine
+DEBUG:root:logging code is running fine
+ERROR:root:logging code is running fine
+WARNING:root:logging code is running fine
+CRITICAL:root:logging code is running fine
