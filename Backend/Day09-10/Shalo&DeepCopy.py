@@ -21,3 +21,16 @@
 # print(b)  #[100,20,30]
 
 
+import copy
+a=[[1,2],[3,4]]
+b=copy.copy(a) 
+b[0][0]=100
+print(a)
+print(b)
+
+import copy
+a=[10,20,30,[1,2],[3,4]]
+b=copy.copy(a) 
+b[2]=100
+print(a)
+print(b)

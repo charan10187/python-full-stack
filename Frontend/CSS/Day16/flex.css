@@ -52,7 +52,7 @@
     flex-flow: column wrap;
     flex-flow: column wrap-reverse; */
 
-    /* justify content: has 6   */
+    /* justify content: has 6  | horizantally  */
     /* justify-content: flex-start;
     justify-content: flex-end;
     justify-content: center;
@@ -60,7 +60,8 @@
     justify-content: space-evenly;
     justify-content: space-between; */
 /* 
-    align-items: flex-start;
+    align-items: flex-start;   # 
+    Vertically
     align-items: center;
     align-items: flex-end; */
     
