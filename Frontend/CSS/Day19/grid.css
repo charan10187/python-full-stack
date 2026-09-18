@@ -5,19 +5,19 @@
 }
 
 #container{
-    width: 600px;
+    width: 100vh;
     /* border-color: 20px solid black; */
     display: grid;
     grid-template-columns: 200px 200px ;
     grid-template-columns: 1fr 1fr;
-    height: 400px;
+    height: 100vh;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr 2fr;
-    column-gap: 20px;
+    /* column-gap: 20px;
     row-gap: 10px;
     gap:20px;
-    grid-gap:10px;
+    grid-gap:10px; */
 
     grid-template-areas: "one one two three"
                          "four five five five"
@@ -35,17 +35,20 @@
 #one{
     grid-area: one;
 }
-#one{
-    grid-area: one;
+#two{
+    grid-area: two;
 }
-#one{
-    grid-area: one;
+#three{
+    grid-area: three;
 }
-#one{
-    grid-area: one;
+#four{
+    grid-area: four;
 }
-#one{
-    grid-area: one;
+#five{
+    grid-area: five;
+}
+#six{
+    grid-area: six;
 }
 
 
