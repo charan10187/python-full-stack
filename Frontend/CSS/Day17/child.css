@@ -1,0 +1,33 @@
+#parent{
+    height: 500px;
+    width: 500px;
+    background-color: brown;
+     display: flex;
+     align-items: center;
+     justify-content:safe;
+}
+
+.child{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 2px solid gray;
+}
+
+.chi1 { order: 2; }
+.chi2 { order: 2; }
+.chi3 { order: 4; }
+.chi4 { order: 1; }
+
+
+.chi1{
+    flex-grow: 3;
+    /* flex-shrink: it specifies how much flex item shrink relative to the rest of flex item */
+    flex-shrink: 3;
+    flex-basis: 100px;
+    flex: 1 0 400px;
+    flex: 0 2 400px;
+    align-self: flex-start;
+    align-self: center ;
+
+}
