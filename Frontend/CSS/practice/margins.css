@@ -1,0 +1,16 @@
+.box{
+    border: 2px solid;
+    font-size: medium;
+    width: 150px;
+    height: 150px;
+    /* margin: auto; */
+}
+#box1{
+    background-color: aqua;
+    margin-right: auto;
+
+}
+#box2{
+    background-color: cornflowerblue;
+    margin-left: auto;
+}
