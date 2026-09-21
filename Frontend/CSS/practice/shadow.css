@@ -2,3 +2,10 @@ h1{
     color: hsl(150, 81%, 57%) ;
     text-shadow: 4px 2px 3px blue,-4px -2px 3px gold;
 } 
+
+#box1{
+    width: 100px;
+    height:100px;
+    background-color:whitesmoke;
+    box-shadow: 3px 3px 5px goldenrod,-3px -3px 5px lightseagreen;
+}
