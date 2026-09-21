@@ -61,7 +61,7 @@ marigin is the the space around the blocks
         |-> Universal Selector (*) = Selects all elements.
 
 
-==> {Compare to class, Id. have more priority then class }
+==> {Compare to class, Idhave more priority then class }
 ==> {Compare to class, Id, tagname. id have more priority then class and tagname, and class is more priority then tagname }
 ==> {Compare to class, Id, tagname, group. id have more priority then class,tagname group, and class is more priority then tagname group, groupname is more priority then group tag }
 
