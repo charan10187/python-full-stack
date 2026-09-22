@@ -1,0 +1,77 @@
+/* this z-insexing is used to adjust the frame positions
+same as in PPTs we send the top frane to send back, send front here we use z-index = priority number  */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#left{
+    float: left;
+    width: 50vw;
+    height: 50vh;
+    background-color: lightblue;
+    position: relative;
+    border: 2px solid;
+    /* display: flow-root; */
+}
+
+/* #right{ */
+    /* float:right; */
+    /* width: 50vw; */
+    /* height: 50vh; */
+    /* background-color: lightblue; */
+    /* position: relative; */
+    /* border: 2px solid; */
+    /* display: flow-root; */
+/* } */
+
+.child{
+    width: 200px;
+    height: 200px;
+    border: 5px solid;
+    background-color: yellow;
+    position: absolute;
+    /* font-size: 40px; */
+    border: 2px solid;
+    opacity: 0.5;
+}
+
+#mybox {
+    background-color: lime! important;
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    z-index: 0;
+    
+
+}
+#div1 {
+    background-color: #fffb00! important;
+    left: 60px;
+    top: 80px;
+    z-index: 2;
+}
+
+#div2 {
+    background-color: blueviolet! important;
+    left: 80px;
+    top: 110px;
+    z-index: 3;
+}
+
+#div3 {
+    background-color:cadetblue! important;
+    left: 100px;
+    top: 130px;
+    z-index: 4;
+
+}
+#div4 {
+    background-color: brown! important;
+    left: 120px;
+    top: 150px;
+    z-index: 5;
+}
