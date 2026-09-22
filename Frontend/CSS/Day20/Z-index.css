@@ -9,8 +9,8 @@ same as in PPTs we send the top frane to send back, send front here we use z-ind
 }
 
 #left{
-    float: left;
-    width: 50vw;
+    /* float: left; */
+    width: 70vw;
     height: 50vh;
     background-color: lightblue;
     position: relative;
@@ -18,19 +18,19 @@ same as in PPTs we send the top frane to send back, send front here we use z-ind
     /* display: flow-root; */
 }
 
-/* #right{ */
+#right{
     /* float:right; */
-    /* width: 50vw; */
-    /* height: 50vh; */
-    /* background-color: lightblue; */
-    /* position: relative; */
-    /* border: 2px solid; */
-    /* display: flow-root; */
-/* } */
+    width: 50vw;
+    height: 50vh;
+    background-color: lightblue;
+    position: relative;
+    border: 2px solid;
+    display: flow-root;
+ }
 
 .child{
-    width: 200px;
-    height: 200px;
+    width: 20vw;
+    height: 20vh;
     border: 5px solid;
     background-color: yellow;
     position: absolute;

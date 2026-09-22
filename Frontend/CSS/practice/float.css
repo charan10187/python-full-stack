@@ -1,16 +1,24 @@
 body{
     border: 2px solid;
-    display: flow-root;
 }
-
+#container{
+    position: relative;
+}
 .img{
     width: 100px;
+    position: absolute;
+    /* bottom: 0px; */
 }
 
 #img1{
     float: right;
+        position: absolute;
+        right: 0px;
+
 }
 #img2{
     float: left;
+        position: absolute;
+
 }
 /* here we can see that the image is coming out of the body border to solve this we use display: flow-root in body tag*/
