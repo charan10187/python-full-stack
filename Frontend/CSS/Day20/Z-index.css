@@ -36,7 +36,7 @@ same as in PPTs we send the top frane to send back, send front here we use z-ind
     position: absolute;
     /* font-size: 40px; */
     border: 2px solid;
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 
 #mybox {
@@ -44,7 +44,7 @@ same as in PPTs we send the top frane to send back, send front here we use z-ind
     position: absolute;
     left: 40px;
     top: 60px;
-    z-index: 0;
+    z-index: 6;
     
 
 }
