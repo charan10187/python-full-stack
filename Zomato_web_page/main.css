@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#zomatovideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+#content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* text-align: center; */
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 20px;
+}
+
+h3 {
+    font-size: 22px;
+}
