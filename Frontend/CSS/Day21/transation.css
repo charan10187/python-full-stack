@@ -78,6 +78,7 @@ h1{
 
 /* ======================================================================== */
 
+/*
 body{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -92,13 +93,24 @@ body{
     transition: transform 2s;
     font-size: 30px;
     color: white;
-    text-align:center;
 }
 
-#box:hover{
+#box1:hover{
     transform: translateX(200px);
     transform: translateY(300px);
     transform: translate(100px, 200px);
 
-    /* transform  rotation properties */
+    transform  rotation properties
+
+    transform: rotateX(360deg);
+    transform: rotateY(360deg);
+    transform: rotate(-15deg);
+    transform: rotate(15deg);
+    transform: rotateY(-45deg);
+    transform: rotate(-30deg);
+    transition-delay: 2s;
+    transition-timing-function: ease;
+   
 }
+
+*/
