@@ -1,0 +1,25 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#box {
+    width: 400px;
+    height: 400px;
+    /* background-color: aqua; */
+    border:2px solid;
+    transition: background-color 2s, border-radius 2s, border 2s;
+    background: url(./smiling-naruto.jpg) no-repeat center;
+    background-size: 100% 100%;
+    transition: all 2s;
+    transition-delay: 3s;
+}
+
+#box:hover {
+    /* background-color: greenyellow; */
+    border: 3px double gold;
+    border-radius: 90%;
+    background: url(./itachi.webp) no-repeat center;
+    background-size: 100% 100%;
+}
