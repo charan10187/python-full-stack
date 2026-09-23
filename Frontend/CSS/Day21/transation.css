@@ -20,6 +20,8 @@
     /* background-color: greenyellow; */
     border: 3px double gold;
     border-radius: 90%;
+    transition-delay: 6s;
     background: url(./itachi.webp) no-repeat center;
     background-size: 100% 100%;
+   
 }
