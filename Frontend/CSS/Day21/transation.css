@@ -4,13 +4,13 @@
     box-sizing: border-box;
 } */
 
-#box {
+#box{
     width: 400px;
     height: 400px;
     /* background-color: aqua; */
-    border:2px solid;
+    /* border:2px solid; */
     transition: background-color 2s, border-radius 2s, border 2s;
-    background: url(./smiling-naruto.jpg) no-repeat center;
+    /* background: url(./smiling-naruto.jpg) no-repeat center; */
     background-size: 100% 100%;
     transition: all 2s;
     transition-delay: 1s;
@@ -21,7 +21,7 @@
     border: 3px double gold;
     border-radius: 90%;
     transition-delay: 3s;
-    background: url(./itachi.webp) no-repeat center;
+    /* background: url(./itachi.webp) no-repeat center; */
     background-size: 100% 100%;
    
 }
@@ -72,4 +72,33 @@ div:hover>#im4{
 
 h1{
     text-align: center;
+}
+
+
+
+/* ======================================================================== */
+
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#box1{
+    width: 600px;
+    height: 300px;
+    margin: 50px;
+    background-color: brown;
+    border: 5px soli lime;
+    transition: transform 2s;
+    font-size: 30px;
+    color: white;
+    text-align:center;
+}
+
+#box:hover{
+    transform: translateX(200px);
+    transform: translateY(300px);
+    transform: translate(100px, 200px);
+
+    /* transform  rotation properties */
 }
