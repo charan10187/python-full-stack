@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#box{
+    width: 300px;
+    height: 300px;
+    background-color: lightgreen;
+
+/* animation name: used to specify name of @keyframe describing the animation */
+
+    animation-name: bgcolorchange;
+    /* animation duration: specify the time duration it takes animation to complete one cycle. */
+
+    animation-duration: 3s;
+
+/* animation-iteration-count: It is used to specify number of cycles to repeat  */
+    animation-iteration-count: infinite;
+
+    animation-timing-function: ease;
+
+    animation-timing-function: ease-in;
+
+    animation-timing-function: ease-out;
+
+    animation-timing-function: ease-in-out;
+
+    animation-iteration-count: linear;
+
+}
+
+/* @keyframes===>it is a rule in CSS used to specify animation rule */
+@keyframes bgcolorchange{
+    from{
+    background-color: blue;
+    }
+    to{
+        background-color: red;
+        border-radius: 100%;
+        transform: translateX(1000px);
+        opacity: 1;
+    }
+}
