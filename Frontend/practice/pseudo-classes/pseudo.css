@@ -9,5 +9,21 @@ a:hover{
 
 a:active{
     color: rgb(0, 0, 0);
-    font-size: medium;
+    font-size: medium; 
+}
+
+/* div:hover{
+    background-color: tomato;
+}
+div:not(:hover){
+    background-color:blanchedalmond;
+} */
+
+#grettings p{
+    background-color: aqua;
+    padding: 10px;
+    display: none;
+}
+#grettings:hover p{
+    display: block;
 }
