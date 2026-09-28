@@ -1,0 +1,28 @@
+h1::first-letter{
+    font-size: 2em;
+    font-style: italic;
+}
+
+p::first-line{
+    background-color:aquamarine ;
+}
+
+
+/* when you select the content the backgroung an text color is automatically changed while you drag the content */
+p::selection{
+    color: brown;
+    background-color: antiquewhite;
+}
+
+/* after completing the list or something we can add the common thing using the selector:: before */
+
+#fruit li::before{
+    content: "♾️";
+}
+#fruit li::after{
+    content: "♾️";
+    /* color: black; */
+}
+
+
+
