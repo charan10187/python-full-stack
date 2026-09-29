@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fdf2f8, #e0f2fe);
+    cursor: url("../../HTML/work/source/smiling-naruto.jpg"), pointer;
+}
+
+body {
+    display: grid;
+    place-items: center;
+}
+
+.cursor-demo {
+    padding: 2rem 3rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+}
+
+h1 {
+    margin: 0;
+    max-width: 700px;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    line-height: 1.4;
+    cursor: url("../../HTML/work/source/insta_logo.jpg"), pointer;
+}

@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    letter-spacing: 10px;
+    font-size: 100px;
+    word-spacing:20px;
+    text-transform:uppercase ;
+    text-transform:lowercase ;
+    text-transform:capitalize;
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through;
+    text-decoration: none;
+    text-decoration: spx solid red underline;
+    text-decoration: 5px double red underline;
+    text-decoration: 5px dashed red underline;
+    text-decoration: 5px dotted red underline;
+    text-decoration: 5px wavy red underline;
+    text-shadow: 2px 2px 2px red;
+    text-shadow: 2px 2px 2px red, -2px -2px 2px blue;
+}
