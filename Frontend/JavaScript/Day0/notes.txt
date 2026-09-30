@@ -1,0 +1,9 @@
+Java Script: ( mocha, live script, java script) old names
+        team burners lee introduced
+        Add functionality to webpage
+
+        Versatile, dynamically typed lang
+        compiled and interpreteed lang
+        asynchronous lang
+
+build interactive web app's and support both server-side and client side 
