@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: aqua;">
     
     <button onclick="alert('this is your job')">clock meee</button>
 
@@ -14,14 +14,45 @@
 
     <select onchange="alert('you changed')">
         <option hidden>choose the options</option>
-        <option>HTML</option>
-        <option>CSS</option>
-        <option>JS</option>
+        <option onclick="HTML()">HTML</option>
+        <option onclick="CSS()">CSS</option>
+        <option onclick="JS()">JS</option>
     </select>
 
     <button onclick="alert(new Date())">Show me date</button>
 
     <button ondblclick="document.body.style.backgroundImage='url(b6d9b7ab-91c7-4f72-9bf2-fcd4ceec3537_DO3BU.avif)'">Double click</button>
+
+
+    <!--  internal  jS  -->
+    <script>
+        console.log("welcome to javaScript")
+
+        function HTML(){
+            alert('html selected')
+        }
+        function CSS(){
+            alert('CSS selected')
+        }
+        function JS(){
+            alert('Java Script selected')
+        }
+        function login(){
+            alert('Login successful')
+        }
+
+        function cart(){
+            alert('ADDED SUCCESSFULLY')
+        }
+
+        function CBC(){
+            document.body.style.backgroundColor='orange'
+        }
+    </script>
+
+    <button onclick="login()">Login</button>
+    <button onclick="cart()">ADD item</button>
+    <button onclick="CBC()">orange</button>
 
 </body>
 </html>
