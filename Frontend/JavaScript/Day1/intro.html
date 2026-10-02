@@ -23,7 +23,19 @@
 
     <button ondblclick="document.body.style.backgroundImage='url(b6d9b7ab-91c7-4f72-9bf2-fcd4ceec3537_DO3BU.avif)'">Double click</button>
 
+    <button onclick="login()">Login</button>
 
+    <button onclick="cart()">ADD item</button>
+    
+    <button onclick="CBC()">orange</button>
+    
+        
+
+    <h1 id="text" style="display: none;"> welcome</h1>
+    
+    <button onclick="showtxt()">show</button>
+
+<!-- the script has to be at the bottom for clarity and code readablity -->
     <!--  internal  jS  -->
     <script>
         console.log("welcome to javaScript")
@@ -31,12 +43,15 @@
         function HTML(){
             alert('html selected')
         }
+
         function CSS(){
             alert('CSS selected')
         }
+
         function JS(){
             alert('Java Script selected')
         }
+
         function login(){
             alert('Login successful')
         }
@@ -48,11 +63,14 @@
         function CBC(){
             document.body.style.backgroundColor='orange'
         }
+
+        function showtxt(){
+            document.getElementById("text").style.display="block"
+        }
+
     </script>
 
-    <button onclick="login()">Login</button>
-    <button onclick="cart()">ADD item</button>
-    <button onclick="CBC()">orange</button>
+
 
 </body>
 </html>

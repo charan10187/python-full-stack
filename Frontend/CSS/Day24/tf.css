@@ -23,3 +23,36 @@ h1{
     text-shadow: 2px 2px 2px red;
     text-shadow: 2px 2px 2px red, -2px -2px 2px blue;
 }
+
+p{
+    font-size: 40px;
+    text-align: left ;
+    text-align: right;
+    text-align: center;
+    text-align: justify;
+    font-weight: bold;
+    font-weight: lighter;
+    font-weight: 900;
+    font-indent:300px;
+    line-height: 80px;
+    font-style: normal;
+    font-style: oblique;
+    font-style: italic;
+    direction: ltr;
+    direction: rtl
+
+}
+
+h2{
+    font-family: cursive;
+    font-family: monospace;
+    font-family: sans-serif;
+    font-family: fantasy;
+    font-family: serif;
+
+    font-family:'Courier New', Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}

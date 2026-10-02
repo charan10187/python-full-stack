@@ -1,5 +1,5 @@
 
-}*{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,6 +8,7 @@
     background-color: blueviolet;
     width: 100vw;
     height: 100vh;
+    display: flex;
 
 }
 
@@ -18,10 +19,5 @@
 }
 #top > p{
     margin-left: 100px;
-    
-}
-
-img{
-    width: 200px;
     
 }
