@@ -68,3 +68,9 @@ window.setTimeout(function after3sec(){
 
 console.log("10")
 console.log(10)
+
+
+console.log(window);
+window.document.write("this is <b style= 'color:red';> with window </b> object <br>")
+document.write("this is without windows object <br>")
+document.write("any object or any function having directrelationship with")
