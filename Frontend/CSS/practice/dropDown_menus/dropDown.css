@@ -24,3 +24,10 @@
 .dropdown:hover .content{
     display: block;
 }
+.dropdown:hover button{
+    background-color: blueviolet;
+}
+
+.dropdown a:hover{
+    background-color: aquamarine;
+}
