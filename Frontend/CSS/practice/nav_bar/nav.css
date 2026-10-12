@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar ul{
+    list-style-type: none;
+    background-color: rgb(2, 157, 196);
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#navbar a{
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 15px;
+}
+
+
