@@ -9,6 +9,8 @@ body{
     background-color: rgb(2, 157, 196);
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
+    position: fixed;
 
 }
 
@@ -19,5 +21,11 @@ body{
     display: block;
     padding: 15px;
 }
+#navbar a:hover{
+    background-color: beige;
+    color: brown;
+}
 
-
+#navbar li{
+    float: left;
+}
