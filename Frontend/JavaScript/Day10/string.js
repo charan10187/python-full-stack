@@ -44,5 +44,3 @@ result=`the addition of ${num1} and ${num2} is ${num1+num2}`
 console.log(result)
 
 
-
-// write a js program to accept a car name car color from the user and display the car name and the car color in the entered car color on the webpage
