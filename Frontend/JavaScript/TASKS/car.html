@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Details</title>
+</head>
+<body>
+  <h2>Car Details</h2>
+  <p id="output"></p>
+
+  <script>
+    const carName = prompt("Enter the car name:");
+    const carColor = prompt("Enter the car color:");
+
+    const output = document.getElementById("output");
+    output.innerHTML = `Car Name: ${carName} <br> Car Color: ${carColor}`;
+    output.style.color = carColor;
+    output.style.color = carName;
+  </script>
+</body>
+</html>
