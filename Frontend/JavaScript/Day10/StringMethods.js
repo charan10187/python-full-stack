@@ -19,3 +19,4 @@
 let str = "JAVASCRIPT";
 console.log(str);
 console.log(str.slice(0, 4)); // Output: JAVA
+console.log(str.slice(1,5)); // Output: AVAS
