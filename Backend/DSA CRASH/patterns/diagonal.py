@@ -5,5 +5,5 @@ for i in range(0,n):
         if i==j or i+j==n-1:
             print("*",end=" ")
         else:
-            print(" ")
+            print(" ",end="")
     print()
