@@ -22,3 +22,29 @@ var surfaceAreaofcube = (side) => {
     console.log( side * side * 6)
 };
 surfaceAreaofcube(3)
+
+// arrow function with multiple parameters
+// variable identifier = (param1, param2, param3) => { statements }
+var multiply = (a, b) => a * b;
+console.log(multiply(2, 3)); // Output: 6
+
+var areaOfRectangle = (length, width) =>{
+    console.log(length * width);
+    console.log(`the length and width of rectangle is ${length} and ${width} and multiplication of length and width is ${length * width}`);
+};
+areaOfRectangle(5, 10); // Output: 50
+
+// arrow function with no parameters
+var sayHello = () => console.log("Hello!");
+sayHello(); // Output: Hello!
+
+// arrow function with return statement
+var square = (x) => {
+    return x * x;
+};
+console.log(square(5)); // Output: 25
+
+let result=AreaofRectangle(l=5,b=10);
+console.log(`the length and width of rectangle is ${l} and ${b} and multiplication of length and width is ${result}cm^2`);
+
+
