@@ -53,3 +53,12 @@ const validateForm = (username, password) => {
     return username !== " " && password.length >= 8;
 };
 console.log(validateForm("user1", "password123")); // Output: true
+
+
+// auto logout using arrow function
+const autoLogout = (time) => {
+    setTimeout(() => {
+        // logout logic here
+        console.log("User has been logged out due to inactivity.");
+    }, 5000); // 5 minutes in milliseconds
+};
