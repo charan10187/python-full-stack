@@ -47,4 +47,9 @@ console.log(square(5)); // Output: 25
 let result=AreaofRectangle(l=5,b=10);
 console.log(`the length and width of rectangle is ${l} and ${b} and multiplication of length and width is ${result}cm^2`);
 
-
+// form validation using arrow function 
+const validateForm = (username, password) => {
+    // validation logic here
+    return username !== " " && password.length >= 8;
+};
+console.log(validateForm("user1", "password123")); // Output: true
