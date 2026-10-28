@@ -69,17 +69,27 @@ console.log(validateForm("user1", "password123")); // Output: true
 //     }, 5000); // 5 minutes in milliseconds
 
 // online exam countdown from 10 seconds
-let time = 10;
-console.log(time);
+// let time = 10;
+// console.log(time);
 
-const countdown = setInterval(() => {
-    time--;
-    console.log(time);
+// const countdown = setInterval(() => {
+//     time--;
+//     console.log(time);
 
-    if (time == 1) {
-        clearInterval(countdown);
+//     if (time == 1) {
+//         clearInterval(countdown);
+//         console.log("Exam time has expired.");
+//     }
+// }, 1000);
+
+let time1 = 10;
+const countdown1 =() => {
+    time1--;
+    console.log(time1);
+    if (time1 == 1) {
         console.log("Exam time has expired.");
+        setTimeout()
+        // it helps us to terminate the countdown after we have reached the end of the countdown. it is important to clear the interval to avoid unnecessary function calls and memory usage.
     }
-}, 1000);
-
-
+}
+setInterval(countdown1, 1000);
