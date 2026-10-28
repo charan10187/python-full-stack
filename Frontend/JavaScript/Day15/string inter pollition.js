@@ -44,7 +44,7 @@ var square = (x) => {
 };
 console.log(square(5)); // Output: 25
 
-let result=AreaofRectangle(l=5,b=10);
+let result=areaOfRectangle(l=5,b=10);
 console.log(`the length and width of rectangle is ${l} and ${b} and multiplication of length and width is ${result}cm^2`);
 
 // form validation using arrow function 
@@ -56,9 +56,30 @@ console.log(validateForm("user1", "password123")); // Output: true
 
 
 // auto logout using arrow function
-const autoLogout = (time) => {
-    setTimeout(() => {
-        // logout logic here
-        console.log("User has been logged out due to inactivity.");
-    }, 5000); // 5 minutes in milliseconds
-};
+// setTimeout(() => {
+//         // logout logic here
+//         console.log("User has been logged out due to inactivity.");
+//     }, 5000); // 5 minutes in milliseconds
+
+// otp expire
+
+// setTimeout(() => {
+//         // otp expire logic here
+//         console.log("OTP has expired.");
+//     }, 5000); // 5 minutes in milliseconds
+
+// online exam countdown from 10 seconds
+let time = 10;
+console.log(time);
+
+const countdown = setInterval(() => {
+    time--;
+    console.log(time);
+
+    if (time == 1) {
+        clearInterval(countdown);
+        console.log("Exam time has expired.");
+    }
+}, 1000);
+
+
