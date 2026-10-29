@@ -86,3 +86,17 @@ anonymousFunction();
     console.log("This is using arrow function IIFE ");
 }
 )();
+
+
+// named function with return type
+function namedFunctionWithReturn(a, b) {
+    return a + b;
+}
+console.log(namedFunctionWithReturn(5, 10)); // Output: 15
+
+// annonymous function with return type 
+let anonymousFunctionWithReturn = function(a, b) {
+    return a + b;
+}
+console.log(anonymousFunctionWithReturn(15, 10)); // Output: 25
+
