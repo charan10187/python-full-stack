@@ -86,6 +86,7 @@ anonymousFunction();
     console.log("This is using arrow function IIFE ");
 }
 )();
+// this IIFE function automatically invoked after the function declaration and we will get the output without any error because the function is defined before the invocation.
 
 
 // named function with return type
@@ -100,3 +101,19 @@ let anonymousFunctionWithReturn = function(a, b) {
 }
 console.log(anonymousFunctionWithReturn(15, 10)); // Output: 25
 
+
+function product(a, b) {
+    return a * b;
+}
+console.log(product(2,20)); // Output: 40
+
+// calucalting the student total marks using anonymous function
+let sum = (s1, s2, s3, s4, s5)=>{
+    return s1 + s2 + s3 + s4 + s5;
+    };
+let result4 = sum(150, 35, 89, 93, 76); // Output: Total marks: 85
+console.log(result4); // Output: 443
+
+console.log("Total marks: " + ((s1, s2, s3, s4, s5)=>{
+    return s1 + s2 + s3 + s4 + s5;
+})(150, 35, 89, 93, 76)); // Output: Total marks: 443
