@@ -117,3 +117,7 @@ console.log(result4); // Output: 443
 console.log("Total marks: " + ((s1, s2, s3, s4, s5)=>{
     return s1 + s2 + s3 + s4 + s5;
 })(150, 35, 89, 93, 76)); // Output: Total marks: 443
+
+
+// clauculating the reminding bank balance after withdrawl(arrow)
+// Execute login validation immideatly without calling the function seperately.(iife)
