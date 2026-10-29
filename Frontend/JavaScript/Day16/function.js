@@ -25,3 +25,16 @@
 ((l,b)=>{
     console.log("Area of rectangle: " + (l*b));
 })(5, 10);
+
+// IIFE with return type. we didn't get output directly but we need to store it in a variable to get the output:
+
+let result = (function(a,b) {
+    return a+b;
+})(5, 10);
+console.log(result); // Output: 15
+
+
+let result1 = (function(a,b) {
+    return a+b;
+});
+console.log(result1(result, 10)); // Output: 25
