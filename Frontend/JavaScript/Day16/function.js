@@ -38,3 +38,32 @@ let result1 = (function(a,b) {
     return a+b;
 });
 console.log(result1(result, 10)); // Output: 25
+console.log("===================================================")
+console.log("===================================================")
+console.log("")
+
+console.log("IIFE function using arrrow function");
+
+((a,b) => {
+    console.log(`Sum: ${a+b}`);
+})(5, 10);
+console.log("")
+console.log("IIFE with one parameter using arrow function");
+((name) => {
+    console.log("good morning, " + name+"to day is 29-10-2024");
+})("bro");
+console.log("")
+
+console.log("IIFE with multiple parameter using arrow function");
+((l,b) => {
+    console.log("Area of rectangle: " + (l*b));
+})(5, 10);
+console.log("")
+
+
+console.log("IIFE function using arrow function with return type");
+let result2 = ((a,b) => {
+    return a+b;
+})(20, 5);
+console.log(result2); // Output: 25
+console.log("")
