@@ -1,1 +1,0 @@
-SELECT @@AUTOCOMMIT;SELECT @@port, @@hostname, @@datadir;
