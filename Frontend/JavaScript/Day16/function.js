@@ -67,3 +67,22 @@ let result2 = ((a,b) => {
 })(20, 5);
 console.log(result2); // Output: 25
 console.log("")
+
+// Named function
+function namedFunction() {
+    console.log("This is a named function");
+}
+namedFunction();
+
+// annonymous function
+let anonymousFunction = function() {
+    console.log("This is an anonymous function");
+}
+anonymousFunction();
+
+// console.log("Here we have to call the function after the function declaration to get the output otherwise we will get an error  because the function is not defined yet");
+
+(()=> {
+    console.log("This is using arrow function IIFE ");
+}
+)();
