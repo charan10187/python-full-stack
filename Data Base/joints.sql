@@ -12,7 +12,5 @@ ON customer_id=id;
 SELECT id,first_name,order_id,sales
 FROM customers
 LEFT JOIN orders
-ON customers.id=orders.customer_id;
-
-SELECT @@port, @@hostname, @@datadir;
+ON customers.id=orders.customer_id; 
 
