@@ -36,4 +36,13 @@ function checkResult(callback) {
 }
 checkResult(result); // calling checkResult function with result function as argument
 
+// callback using settimeout function
+setTimeout(()=>{
+    console.log("This message is displayed after 2 seconds");
+}, 2000);
 
+function displayMessage(){
+    console.log("This message is displayed after 5 seconds");
+    console.log()
+}
+setTimeout(displayMessage, 5000); // passing displayMessage function as an argument to setTimeout function
