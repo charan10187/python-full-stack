@@ -1,5 +1,9 @@
 // calucate the total price of the product 
 
+function product(product, quantity) {
+    return product * quantity;
+}
+console.log(product(2,20)); // Output: 40
 
 // calucalting the student total marks using anonymous function
 let sum = (s1, s2, s3, s4, s5)=>{
@@ -21,6 +25,6 @@ var Withderawl=((Amount,withdrawal)=>{
 
 // Execute login validation immideatly without calling the function seperately.(iife)
 
-var loginValidation=(()=>{
+var loginValidation=((user, password)=>{
     return user==="charn" && password==="charan@123"
-})()
+})("charn", "charan@123");
