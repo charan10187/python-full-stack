@@ -13,3 +13,27 @@ processUserInput(greet); // passing greet function as an argument to processUser
 
 // greet is a normal function
 // processUserInput is a higher-order function because it takes another function (greet) as an argument. The greet function is a callback function because it is passed to processUserInput and invoked within it.
+
+function add(a, b) {
+    return a + b;
+}
+
+function demo(callback) {
+    console.log(callback(10, 5));
+}
+demo(add);
+
+// student result ( >=35 student passed. else student failed)
+function result(marks) {
+    if (marks >= 35) {  
+        return "Student passed";
+    } else {
+        return "Student failed";
+    }
+}
+function checkResult(callback) {
+    console.log(callback(40)); // calling the callback function with argument 40
+}
+checkResult(result); // calling checkResult function with result function as argument
+
+
