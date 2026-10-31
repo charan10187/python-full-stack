@@ -1,4 +1,4 @@
-// HOF (it is takinganother function as argument or returns function ) and
+// Higher-Order Function(HOF) (it is takinganother function as argument or returns function ) and
 
 // callback function (it is passed as an argument to another function)
 
@@ -12,7 +12,7 @@ function processUserInput(callback) {
 processUserInput(greet); // passing greet function as an argument to processUserInput function
 
 // greet is a normal function
-// processUserInput is a higher-order function because it takes another function (greet) as an argument. The greet function is a callback function because it is passed to processUserInput and invoked within it.
+// processUserInput is a `higher-order` function because it takes another function (greet) as an argument. The greet function is a callback function because it is passed to processUserInput and invoked within it.
 
 function add(a, b) {
     return a + b;
@@ -46,3 +46,6 @@ function displayMessage(){
     console.log()
 }
 setTimeout(displayMessage, 5000); // passing displayMessage function as an argument to setTimeout function
+
+
+
