@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./t5.js"></script>
+    <title>Password Strength</title>
+    <script src="./t5.js" defer></script>
 </head>
 <body>
-    
-    <input type="text" id="result" oninput="psw()">
-
-    
+    <input type="text" id="Color" 
+    placeholder="Enter password" 
+    oninput="psw()" 
+    maxlength="12" 
+    minlength="5">
+    <h1 id="msg"></h1>
 </body>
 </html>
+
