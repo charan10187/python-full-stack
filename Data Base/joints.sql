@@ -24,5 +24,11 @@ FROM customers
 RIGHT JOIN orders
 ON customers.id=orders.customer_id;
 
+-- OR we can also use the Left Join which gives same result
+SELECT id,first_name,order_id,sales
+FROM orders 
+LEFT JOIN customers
+ON customers.id=orders.customer_id;
+
 
 
