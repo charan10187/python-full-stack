@@ -14,3 +14,4 @@ function dec(){
         document.getElementById("result").value=num
     }
 }
+

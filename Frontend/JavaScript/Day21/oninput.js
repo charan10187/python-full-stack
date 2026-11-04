@@ -1,16 +1,14 @@
 function fun(){
-    var bgColor=document.getElementById("color"),value;
+    var bgColor=document.getElementById("Color"),value;
     document.body.style.backgroundColor=bgColor;
 }
 
 //addeventlistner 
 
-var bgColor=document.getElementById("color");
+var bgColor=document.getElementById("Color");
     bgColor.addEventListener("input",()=>{
         document.body.style.backgroundColor=bgColor.value;
 
     })
     
-//PASSWORD ,<5 WEAKPASSWORD(RED)
-// >=5 <8 average (blue)
-// >=8,<=12 Strong(green)
+
