@@ -36,4 +36,12 @@ FROM customers as c
 FULL JOIN orders as o
 ON c.id=o.customer_id;
 
-
+SELECT id,first_name,order_id,sales
+FROM customers
+RIGHT JOIN orders
+ON customers.id=orders.customer_id
+UNION
+SELECT id,first_name,order_id,sales
+FROM orders 
+LEFT JOIN customers
+ON customers.id=orders.customer_id;
