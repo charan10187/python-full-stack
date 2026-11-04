@@ -18,6 +18,11 @@ LEFT JOIN orders
 ON customers.id=orders.customer_id; 
 
 -- Right Join
+--  Get all customers along with their orders,including orders without matching customers
+SELECT id,first_name,order_id,sales
+FROM customers
+RIGHT JOIN orders
+ON customers.id=orders.customer_id;
 
 
 
