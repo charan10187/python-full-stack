@@ -43,7 +43,7 @@ let averageMarks = (total, subjects) => {
 var average=averageMarks(total, 3)
 console.log("Average marks: " + average);
 
-function resultstd(average) {
+setTimeout(function resultstd(average) {
     if (average >= 35) {
         return "Student passed";
     } else {
@@ -53,8 +53,9 @@ function resultstd(average) {
 function checkResult(callback) {
     console.log(callback(average));
 }
-checkResult(resultstd)
 
+checkResult(resultstd)
+},5000);
 
 }, 5000);
 

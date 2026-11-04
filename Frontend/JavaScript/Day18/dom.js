@@ -26,3 +26,8 @@
 // document.querySelectorAll()
 
 document.getElementById("head").innerHTML="this is a heading"
+
+var AllHeadings=document.getElementsByClassName("heading")
+console.log(AllHeadings);
+
+// html collection: A live, Array-like list 
