@@ -5,14 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Strength</title>
     <script src="./t5.js" defer></script>
+    <style>
+        #container{
+            height: 50vh ;
+            width: 50vw;
+            border: 2px solid;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+        }
+        #Color{
+            width: 80%;
+            height: 20%;
+            border-radius: 25px;
+            align-self: center;
+            flex-direction:column;
+       }
+        #msg{
+            width: 80%;
+            height: 20%;
+            border-radius: 25px;
+            align-self: center;
+            justify-self: center;
+
+        }
+    </style>
 </head>
 <body>
-    <input type="text" id="Color" 
+    <div id="container">
+    <input type="password" id="Color" 
     placeholder="Enter password" 
     oninput="psw()" 
     maxlength="12" 
     minlength="5">
-    <h1 id="msg"></h1>
+    <h1 id="msg">result</h1>
+    </div>
 </body>
 </html>
 

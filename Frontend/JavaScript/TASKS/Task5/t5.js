@@ -8,18 +8,18 @@ function psw() {
     const length = text.length;
     const msg = document.getElementById("msg");
 
-    if (length === 0) {
-        msg.style.color = "yellow";
-        msg.textContent = "vububbh";
-    } else if (length < 5) {
+    if (length <3) {
+        msg.style.color = "darkgray";
+        msg.textContent = "Too week 😂🤣";
+    } else if (length <5) {
         msg.style.color = "red";
-        msg.textContent = "Weak password";
-    } else if (length < 8) {
+        msg.textContent = "Weak password 😥";
+    } else if (length <=8) {
         msg.style.color = "blue";
-        msg.textContent = "Average password";
+        msg.textContent = "Average password 🥺";
     } else if (length <= 12) {
         msg.style.color = "green";
-        msg.textContent = "Strong password";
+        msg.textContent = "Strong password 😎";
     } else {
         msg.style.color = "";
         msg.textContent = "Too long (max 12 characters)";

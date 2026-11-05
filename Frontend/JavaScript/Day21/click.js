@@ -1,6 +1,7 @@
 
 var num=0
 
+
 function inc(){
     num++;
     if(num>0 && num<=10){
