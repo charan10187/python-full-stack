@@ -6,7 +6,21 @@
     <title>Document</title>
     <script src="./event.js" defer></script>
     <style>
+        body{
+            height: 100vh;
+            background:radial-gradient(orange, pink,red);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         input{
+            height: 20px;
+            z-index: 0;
+        }
+        img{
+            width: 25px;
+            z-index: 1;
+            margin-left: -30px;
             
         }
     </style>
@@ -14,6 +28,6 @@
 <body>
     
     <input type="password">
-    <img src="" alt="" id="eye" onmouseover="showpassword()" onmouseout="hidepassword()">
+    <img src="eye-solid-full.svg" alt="eyee" id="eye" onmouseover="showpassword()" onmouseout="hidepassword()">
 </body>
 </html>
