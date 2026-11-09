@@ -27,3 +27,12 @@ WHERE customers.id IS NULL
 -- WHERE customers.id is NULL OR orders.customer_id IS NULL 
 -- ====>in My SQL this FULL JOIN is assuming FULL as table alies so iam using UNION thing here
 
+SELECT * FROM customers
+LEFT JOIN orders
+ON customers.id=orders.customer_id
+WHERE orders.customer_id IS NULL
+UNION
+SELECT * FROM customers
+RIGHT JOIN orders
+ON customers.id=orders.customer_id
+WHERE customers.id IS NULL
