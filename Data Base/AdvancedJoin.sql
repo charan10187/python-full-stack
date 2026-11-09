@@ -12,5 +12,9 @@ RIGHT JOIN orders
 ON customers.id=orders.customer_id
 WHERE customers.id IS NULL
     -- OR
-
+-- Get all orders without matching customers (Using LEFT JOin)
+SELECT * FROM orders
+LEFT JOIN customers
+ON customers.id=orders.customer_id
+WHERE customers.id IS NULL
 
