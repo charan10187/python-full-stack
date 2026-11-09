@@ -8,14 +8,40 @@
 </head>
 <body>
 
-    <input id="input">
+    <!-- <input id="input"> -->
     
-    <input type="password" id="p1" placeholder="Enter password">
+    <!-- <input type="password" id="p1" placeholder="Enter password">
 
     <input type="password" id="p2" placeholder="Confirm password">
 
-    <button id="sub" disabled>Submit</button>
+    <button id="sub" disabled>Submit</button> -->
 
-    
+    <table>
+        <tr>
+            <th colspan="2">Login</th>
+        </tr>
+        <tr>
+            <th><input type="text" placeholder="enter name" id="FN" oninput="fun()"></th>
+            <th><input type="text" placeholder="re-enter name" id="SN" oninput="fun()"></th>
+
+        </tr>
+        <tr>
+            <th><input type="password" placeholder="enter pass" id="P" oninput="fun()"></th>
+            <th><input type="password" placeholder="re-enter name" id="CP" oninput="fun()"></th>
+        </tr>
+        <tr>
+            <th colspan="2"><input type="tel" placeholder="mobile" id="mobile" oninput="fun()"></th>
+        </tr>
+        <tr>
+            <th colspan="2"><input type="submit" disabled id="result" oninput="fun()"></th>
+        </tr>
+    </table>
+    <style>
+        table,tr{
+            border: 2px solid;
+            border-collapse: collapse;
+        }
+    </style>
+
 </body>
 </html>
