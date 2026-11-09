@@ -36,3 +36,5 @@ SELECT * FROM customers
 RIGHT JOIN orders
 ON customers.id=orders.customer_id
 WHERE customers.id IS NULL
+
+-- Get all customers along with there orders, but only for customers who have placed an order
