@@ -1,0 +1,11 @@
+1. var let const
+2. functions - arrow functions, HOF,
+ callback
+3. array methods - map filter reduce find etc..
+4. objects read the objects data
+5. dom basics
+6. promises
+7. events
+8. Destructuring
+9. spread and rest operators
+10. modules
