@@ -12,8 +12,9 @@ SELECT * FROM customers
 RIGHT JOIN orders
 ON customers.id=orders.customer_id
 WHERE customers.id IS NULL
-    -- ====>OR
+    -- ====> OR
 -- ====> Get all orders without matching customers (Using LEFT JOin)
+
 SELECT * FROM orders
 LEFT JOIN customers
 ON customers.id=orders.customer_id
@@ -25,7 +26,7 @@ WHERE customers.id IS NULL
 -- FULL JOIN orders
 -- ON customers.id=orders.customer_id
 -- WHERE customers.id is NULL OR orders.customer_id IS NULL 
--- ====>in My SQL this FULL JOIN is assuming FULL as table alies so iam using UNION thing here
+-- ====> In My SQL this FULL JOIN is assuming FULL as table alies so iam using UNION thing here
 
 SELECT * FROM customers
 LEFT JOIN orders
@@ -37,7 +38,7 @@ RIGHT JOIN orders
 ON customers.id=orders.customer_id
 WHERE customers.id IS NULL
 
--- Get all customers along with there orders, but only for customers who have placed an order
+-- ====> Get all customers along with there orders, but only for customers who have placed an order
 SELECT * FROM customers
 LEFT JOIN orders
 ON customers.id=orders.customer_id
@@ -47,3 +48,7 @@ WHERE orders.customer_id IS NOT NULL
 -- RIGHT JOIN orders
 -- ON customers.id=orders.customer_id
 -- WHERE customers.id IS NOT NULL
+
+-- CROSS JOIN
+
+
