@@ -6,6 +6,7 @@ LEFT JOIN orders
 ON customers.id=orders.customer_id
 WHERE orders.customer_id IS NULL;   
 
+-- RIGHT ANIT JOIN
 --  Get all orders without matching customers
 SELECT * FROM customers
 RIGHT JOIN orders
