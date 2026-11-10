@@ -68,3 +68,15 @@ console.log(color1)
 
 color1.splice(1,2) // removes 2 elements from index 1
 console.log(color1)
+
+// Array length :length is not a method it is a property of array
+var color2=["blue","green","yellow","orange","black","white"]
+console.log(color2.length)
+// increasing the length of array
+color2.length=10
+console.log(color2.length)
+console.log(color2)
+// decreasing the length of array
+color2.length=3
+console.log(color2.length)
+console.log(color2)
