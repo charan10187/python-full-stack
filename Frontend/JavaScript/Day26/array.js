@@ -80,3 +80,9 @@ console.log(color2)
 color2.length=3
 console.log(color2.length)
 console.log(color2)
+
+// itrating the array elements using for loop
+var roles=["admin","user","manager","developer"]
+for(i=0;i<roles.length;i++){
+    console.log(roles[i])
+}
