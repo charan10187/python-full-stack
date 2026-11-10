@@ -50,14 +50,21 @@ console.log(webtech)
                         color.push("last adding")
                         console.log(color)
 
+console.log("==========")                        
 var color1=["blue","green","yellow","orange","black","white"]
 console.log(color1)
 
 color1.pop() // removes last element
+console.log(color1)
+
 color1.pop() // removes last element
 console.log(color1)
-color1.shift() // removes first element
+
 color1.shift() // removes first element
 console.log(color1)
+
+color1.shift() // removes first element
+console.log(color1)
+
 color1.splice(1,2) // removes 2 elements from index 1
 console.log(color1)
