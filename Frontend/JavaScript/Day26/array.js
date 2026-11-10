@@ -86,3 +86,8 @@ var roles=["admin","user","manager","developer"]
 for(i=0;i<roles.length;i++){
     console.log(roles[i])
 }
+
+// forEach() loop: it does not return new array and not modify the original array 
+roles.forEach(function(role) {
+    console.log(role)
+})
