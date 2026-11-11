@@ -49,6 +49,11 @@ console.log(name_length); // Output: [5, 6, 6, 5]
 let filter_fruits = fruits.filter((value) => {return value.length > 5});
 console.log(filter_fruits); // Output: [ 'Banana', 'Orange' ]   
 
+// Reduce: It is used to reduce the array to a single value.
+// syntax: arr_name.reduce(initialValue, index, arr)=>{//code to be executed for each element in the array}
+
+let total_length = fruits.reduce((accumulator, currentValue) => {return accumulator + currentValue.length}, 0);
+console.log(total_length); // Output: 22 
 
 
 
