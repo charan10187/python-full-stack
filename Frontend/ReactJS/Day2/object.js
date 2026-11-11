@@ -43,6 +43,11 @@ console.log(fruits[3]); // Output: Mango
 let name_length = fruits.map((value) => {return value.length});
 console.log(name_length); // Output: [5, 6, 6, 5]
 
+// filter: It is used to filter the data from an array and return a new array.
+// syntax: arr_name.filter(initialValue, index, arr)=>{//code to be executed for each element in the array}
+
+let filter_fruits = fruits.filter((value) => {return value.length > 5});
+console.log(filter_fruits); // Output: [ 'Banana', 'Orange' ]   
 
 
 
