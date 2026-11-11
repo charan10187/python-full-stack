@@ -48,3 +48,5 @@ console.log(name_length); // Output: [5, 6, 6, 5]
 
 
 
+
+
