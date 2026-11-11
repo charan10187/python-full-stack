@@ -56,6 +56,11 @@ let total_length = fruits.reduce((accumulator, currentValue) => {return accumula
 console.log(total_length); // Output: 22 
 
 
+// find: It is used to find the first element in an array that satisfies a condition and return that element.
+// syntax: arr_name.find(initialValue, index, arr)=>{//code to be executed for each element in the array}   
+
+let find_fruit = fruits.find((value) => {return value.length > 5});
+console.log(find_fruit); // Output: Banana
 
 
 
