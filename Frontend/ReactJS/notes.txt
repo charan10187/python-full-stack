@@ -9,3 +9,17 @@
 8. Destructuring
 9. spread and rest operators
 10. modules
+
+
+
+return statements
+                    implicit return: when we have only one line execution then we use the implicit return 
+                    ex:- let add =(num1,num2)=>num1+num2
+                    clg(add(10,20))
+
+                    explicit return:-
+                                we are adding return key word
+
+HOF (higher order functions) a function which accepts a anther function as an argument that function we call it as a higher order function
+
+callback: the functionwe are passing as a argument that we call it as an argument that function 
