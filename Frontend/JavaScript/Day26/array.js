@@ -91,3 +91,10 @@ for(i=0;i<roles.length;i++){
 roles.forEach(function(role) {
     console.log(role)
 })
+
+// three differnt objects in java Script
+// console,document,window
+// math.random
+
+console.log(Math.random())  
+
