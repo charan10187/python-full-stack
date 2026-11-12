@@ -3,7 +3,7 @@
 
 console.log(Date());
 
-function dateTime(setInterval){
+function dateTime(){
     var date=new Date()
     console.log(date);
     // to get time 
@@ -47,4 +47,13 @@ function dateTime(setInterval){
 
 }
 // dateTime()
-setInterval(dateTime,1000);
+// setInterval(dateTime,1000);
+
+function OTP(){
+
+    sentOTP=(Math.floor(Math.random() * 9000) + 1000);
+    console.log(sentOTP)
+}
+OTP()
+
+var input=document.querySelector()

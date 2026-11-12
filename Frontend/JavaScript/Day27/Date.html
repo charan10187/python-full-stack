@@ -6,17 +6,37 @@
     <title>Document</title>
     <script src="./Date.js" defer></script>
     <style>
-        #container{
-            width: 100px;
-            height: 100px;
-            padding: 100px;
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            background:linear-gradient(red,yellow,lightblue,skyblue);
+            background-repeat: no-repeat;
+            height: 100vh;
 
         }
-        #form{
-            width: 100px;
-            height:100px;
-            padding: 100px;
+        #container {
+            width: 200px;
+            display: flexbox;
+            justify-self: center;
+            justify-items: center;
+            /* align-content: center; */
+            padding: 130px;
         }
+
+        #form{
+            display: flexbox;
+            justify-self: center;
+            justify-items: center;
+            align-content: center;
+            /* padding: 130px; */
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -27,15 +47,13 @@
         <h1 id="time"></h1>
     </div>
 
-    <hr>
-
     <div id="form">
     <form action="">
 
         <input type="password">
         <h1 id="result"></h1>
-        <input type="button" value="submit">
-        <input type="button" value="generateotp">
+        <input class="btn" type="button" value="Submit">
+        <input class="btn" type="button" value="Generate OTP" onclick="OTP()">
     </form>
     </div>
 </body>
