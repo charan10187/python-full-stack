@@ -1,6 +1,5 @@
 // date constructor: by using date constructor we have to create date object. we can create date object by using new Date() constructor. it will create date object with current date and time. we can also create date object by passing date string or date values to the constructor.
 
-
 console.log(Date());
 
 function dateTime(){
@@ -26,7 +25,6 @@ function dateTime(){
         console.log(fullday[day])
 
 
-
     // to get 12 hours 
 
     var AM_PM="AM"
@@ -46,14 +44,35 @@ function dateTime(){
 
 
 }
-// dateTime()
+dateTime()
 // setInterval(dateTime,1000);
+
 
 function OTP(){
 
-    sentOTP=(Math.floor(Math.random() * 9000) + 1000);
-    console.log(sentOTP)
-}
-OTP()
+    sentOTP=Math.floor(Math.random() * 9000) + 1000;  
+    
+    // some times iam getting 5 digit otp
+    // if(length.sentOTP>=4){
+    //     OTP()
+    // }
+    
+    console.log("OTP: ",sentOTP)
 
-var input=document.querySelector()
+}
+OTP();
+
+function fun(){
+
+    const input=document.querySelector("#user").value
+    const msg=document.getElementById("result");
+    if(sentOTP === Number(input)){
+        msg.style.color="green"
+        msg.textContent="Welcome to My YT Channel"
+    }
+    else{
+        msg.style.color="red"
+        msg.textContent="Wrong OTP Re-enter the OTP"
+    }
+
+}

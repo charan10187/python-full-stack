@@ -10,33 +10,57 @@
             margin: 0;
             padding:0;
             box-sizing: border-box;
-        }
-        
+        }     
         body{
             background:linear-gradient(red,yellow,lightblue,skyblue);
             background-repeat: no-repeat;
             height: 100vh;
-
         }
-        #container {
+
+         #container {
             width: 200px;
             display: flexbox;
             justify-self: center;
             justify-items: center;
             /* align-content: center; */
-            padding: 130px;
-        }
+            padding-top: 130px;
+         } 
 
-        #form{
-            display: flexbox;
+        #containerform{
+            display: flex;
             justify-self: center;
-            justify-items: center;
-            align-content: center;
+            align-items: center;
+            /* background-color: white; */
+            width: 50%;
+            height: 300px;
             /* padding: 130px; */
         }
+        form{
+            width: 100%;
+             display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        input{
+            width:90%;
+            height: 50px;
+            margin-top: 10px;
+        }
 
+        #last {
+            width: 90%;         /* Matches the 90% width of your OTP input */
+            display: flex;      /* Puts buttons side by side */
+            gap: 10px;          /* Adds clean spacing between the two buttons*/ 
+        }
+        h1{
+            width: 90%;
+        }
 
-
+        .btn {
+        flex: 1;             /* Makes both buttons share the width equally */
+        }
+       
     </style>
 </head>
 <body>
@@ -47,13 +71,16 @@
         <h1 id="time"></h1>
     </div>
 
-    <div id="form">
+    <div id="containerform">
     <form action="">
 
-        <input type="password">
-        <h1 id="result"></h1>
-        <input class="btn" type="button" value="Submit">
-        <input class="btn" type="button" value="Generate OTP" onclick="OTP()">
+        <input type="password" id="user" placeholder="Enter 4-digits OTP"  clminlength="4" maxlength="4" onkeydown="if(event.key === 'Enter') { event.preventDefault(); fun(); }">
+        <div id="last">
+            <input class="btn" type="button" value="Submit" onclick="fun()">
+            <input class="btn" type="button" value="Generate OTP" onclick="OTP()">
+        </div>
+        <h3
+         id="result"></h3>
     </form>
     </div>
 </body>
