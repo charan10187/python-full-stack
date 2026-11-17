@@ -4,12 +4,47 @@
     box-sizing: border-box;
 }
 
-#main{
+body{
+    background-image: url(https://wallpaperaccess.com/full/917802.jpg);
+}
+#container{
     width: 30vw;
-    height: 50vh;
-    border: 2px solid;
+    height: 25vh;
+    border: 2px double;
+    background-color: rgb(79, 77, 77);
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
+#input{
+    width: 95%;
+    height: 5vh;
+    border-radius: 10px;
+}
 .three{
-    width: 30%;
+    width: 9vw;
+    height: 4vh;
+    border-radius: 10px;
+}
+
+.four{
+    width: 6.5vw;
+    border-radius: 10px;
+    
+}
+#AC{
+    background-color: orange;
+}
+
+.four:hover{
+
+    background-color: rgb(228, 164, 86);
+
+}
+
+.three:hover{
+
+    background-color:  rgb(228, 164, 86);
+
 }
