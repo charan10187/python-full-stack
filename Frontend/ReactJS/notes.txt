@@ -23,3 +23,13 @@ return statements
 HOF (higher order functions) a function which accepts a anther function as an argument that function we call it as a higher order function
 
 callback: the functionwe are passing as a argument that we call it as an argument that function 
+
+
+====================  JSX  ======================= 
+JSX stands for javascript XML which is a extension of js 
+JSx is the one which enables the functionality of writing html like code inside the js
+it is used to create components
+it is similar to innerHTML
+
+React will understand only JSX but browser will not understand JSX so to convert JSX into any browser understanding format we use bable JSX
+Bable js is a next generation is compiler.
