@@ -23,6 +23,9 @@ return statements
 HOF (higher order functions) a function which accepts a anther function as an argument that function we call it as a higher order function
 
 callback: the functionwe are passing as a argument that we call it as an argument that function 
+        let cal = (a,b,operators)=>operators(a,b)
+        let add = (a)
+
 
 
 ====================  JSX  ======================= 
@@ -33,3 +36,58 @@ it is similar to innerHTML
 
 React will understand only JSX but browser will not understand JSX so to convert JSX into any browser understanding format we use bable JSX
 Bable js is a next generation is compiler.
+
+comenting 
+HTML: <!-- -->   
+JSX : {/*   */}
+
+HTML:class
+JSX:className
+
+HTML:for
+JSX:htmlFor
+
+style="
+
+RULES of JSX
+1. if elements >1 we need to wrap them in the parent tag
+<div>
+    <h1></h1>
+    <h1></h1>
+</div>
+
+2. to avoid extra nodes we use React fragment(empty fragment)
+<>
+    <h1></h1>
+    <h1></h1>
+</>
+
+3. strict syntax:
+    <h1> </h1>
+
+4. JSX expression -> "{}"
+<div>
+    <h1>{2+2}</h1>
+    <h1> iam okay</h1>
+</div
+
+5. class -> className
+6. for -> htmlFor
+
+
+Components are samll UI blocks
+componentsare reusable
+Components are independent
+    we can create components in two ways
+        class based component(CBC)
+        Function based component(FBC)
+
+Class-based from react 
+class identifier extends react.component{
+    render(){
+        return(
+            // code
+        )
+    }
+}
+Export default identifier;
