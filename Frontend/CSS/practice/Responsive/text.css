@@ -1,0 +1,11 @@
+#box{
+    width: 20vw;
+/* Depending on the screen width the box size is changed 
+        here the screen width(X-axis) is parent and the box is child  */
+        
+        
+    height: 20vh;
+/* Depending on the screen height the box size is changed 
+        here the screen height(Y-axis) is parent and the box is child */
+    background-color: crimson;
+}
