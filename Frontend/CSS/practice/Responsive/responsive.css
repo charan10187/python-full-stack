@@ -6,12 +6,19 @@ body{
 
 #box{
     width: 50%;
-    height: 100%;
+    height: 50%;
     background-color: crimson;
 }
 #inner{
     width: 50%;
-    height: 100%;
+    height: 50%;
     background-color: aquamarine;
     
 }
+
+/* 
+    pixel has a fixed size it does not depending in any thing  
+
+% - the child size is dependending on parent size  
+
+*/
