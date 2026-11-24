@@ -18,4 +18,8 @@ div{
     background-color:rgb(14, 152, 226);
     }
 }
-
+@media (min-width:200px) and (max-width:300px){
+    div{
+    background-color:rgb(238, 5, 168);
+    }
+}
