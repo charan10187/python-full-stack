@@ -1,14 +1,13 @@
 div{
     height:50px;
     width: 50px;
-    /* background-color: aquamarine; */
-}
-/* 
+    background-color: aquamarine;
+} 
 @media (width:600px) { 
     div{
     background-color:red;
     }
-} */
+} 
 @media (min-width:600px) { 
     div{
     background-color:goldenrod;
@@ -19,3 +18,4 @@ div{
     background-color:rgb(14, 152, 226);
     }
 }
+
